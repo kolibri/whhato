@@ -1,0 +1,3 @@
+whhato:
+    path: /whhato
+    defaults: { _controller: 'App\Controller\WhhatoController::whatHappendToday' }

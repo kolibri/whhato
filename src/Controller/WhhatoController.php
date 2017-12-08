@@ -15,6 +15,11 @@ class WhhatoController
         $this->whhato = $whhato;
     }
 
+    public function index()
+    {
+        return new JsonResponse('ok');
+    }
+
     public function whatHappendToday()
     {
         $date = new \DateTime('now');

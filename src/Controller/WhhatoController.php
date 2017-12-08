@@ -26,9 +26,9 @@ class WhhatoController
 
         try {
             $message = $this->whhato->getRandomDateMessage($date);
-            return new JsonResponse(['message' => $message->format($date)]);
+            return new JsonResponse(['text' => $message->format($date)]);
         } catch (DateMessageNotFoundException $dateMessageNotFoundException) {
-            return new JsonResponse(['error' => $dateMessageNotFoundException->getMessage()], 404);
+            return new JsonResponse(['text' => $dateMessageNotFoundException->getMessage()], 404);
         }
     }
 }

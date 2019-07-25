@@ -1,0 +1,117 @@
+---
+- hosts: all
+  vars:
+    project_path: /opt/whhato/
+  tasks:
+    - debug: var=hostvars
+
+    - name: install packages
+      become: yes
+      package:
+        name:
+          - ca-certificates
+          - apt-transport-https 
+          - ufw
+
+    - name: uninstall packages
+      become: yes
+      package:
+        state: absent
+        name:
+          - apache2
+
+    - name: add sury key
+      become: yes
+      apt_key:
+        url: https://packages.sury.org/php/apt.gpg
+        state: present
+
+    - name: add sury repo
+      become: yes
+      apt_repository:
+        repo: deb https://packages.sury.org/php/ stretch main
+        state: present
+
+    - name: install packages
+      become: yes
+      package:
+        name:
+          - acl
+          - curl
+          - nginx
+          - php7.2
+          - php7.2-cli
+          - php7.2-curl
+          - php7.2-fpm
+          - php7.2-intl
+          - php7.2-xml
+          - php7.2-zip
+
+    - name: enable nginx in firewall
+      become: yes
+      ufw:
+        rule: allow
+        name: Nginx HTTP
+#      notify:
+#        - restart nginx
+
+    - name: static config files
+      become: yes
+      copy:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      loop:
+        - {src: 'files/php.ini', dest: '/etc/php/7.2/cli/php.ini' }
+        - {src: 'files/php.ini', dest: '/etc/php/7.2/fpm/php.ini' }
+        - {src: 'files/php-fpm.conf', dest: '/etc/php/7.2/fpm/php-fpm.conf' }
+        - {src: 'files/pool.conf', dest: '/etc/php/7.2/fpm/pool.d/www.conf' }
+      notify:
+        - restart fpm
+        - restart nginx
+
+    - name: template config files
+      become: yes
+      template:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      loop:
+        - {src: 'templates/vhost.conf.j2', dest: '/etc/nginx/sites-enabled/default' }
+      notify:
+        - restart fpm
+        - restart nginx
+
+    - name: create project path
+      become: yes
+      file:
+        state: directory
+        dest: "{{ project_path }}"
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+
+    - name: create deploy dir
+      deploy_helper:
+        state: present
+        path: "{{ project_path }}"
+
+
+    - name: enable nginx service
+      become: yes
+      service: 
+        name: nginx
+        state: started
+        enabled: true
+
+
+
+
+  handlers:
+    - name: restart nginx
+      become: yes
+      service: 
+        name: nginx 
+        state: restarted
+    - name: restart fpm
+      become: yes
+      service: 
+        name: php7.2-fpm 
+        state: restarted

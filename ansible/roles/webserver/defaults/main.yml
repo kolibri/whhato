@@ -1,0 +1,4 @@
+---
+project_path: /opt/whhato/
+web_user: www-data
+tarball_path: "{{ playbook_dir }}/../whhato.tar.gz"

@@ -1,0 +1,110 @@
+---
+- name: install packages
+  become: yes
+  package:
+    name:
+      - ca-certificates
+      - apt-transport-https 
+      - ufw
+
+- name: uninstall packages
+  become: yes
+  package:
+    state: absent
+    name:
+      - apache2
+
+- name: add sury key
+  become: yes
+  apt_key:
+    url: https://packages.sury.org/php/apt.gpg
+    state: present
+
+- name: add sury repo
+  become: yes
+  apt_repository:
+    repo: deb https://packages.sury.org/php/ stretch main
+    state: present
+
+- name: install packages
+  become: yes
+  package:
+    name:
+      - acl
+      - curl
+      - nginx
+      - php7.2
+      - php7.2-cli
+      - php7.2-curl
+      - php7.2-fpm
+      - php7.2-intl
+      - php7.2-xml
+      - php7.2-zip
+
+- name: enable nginx in firewall
+  become: yes
+  ufw:
+    rule: allow
+    name: Nginx HTTP
+#      notify:
+#        - restart nginx
+
+- name: static config files
+  become: yes
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  loop:
+    - {src: 'php.ini', dest: '/etc/php/7.2/cli/php.ini' }
+    - {src: 'php.ini', dest: '/etc/php/7.2/fpm/php.ini' }
+    - {src: 'php-fpm.conf', dest: '/etc/php/7.2/fpm/php-fpm.conf' }
+  notify:
+    - restart fpm
+    - restart nginx
+
+- name: template config files
+  become: yes
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  loop:
+    - {src: 'vhost.conf.j2', dest: '/etc/nginx/sites-enabled/default' }
+    - {src: 'pool.conf.j2', dest: '/etc/php/7.2/fpm/pool.d/www.conf' }
+  notify:
+    - restart fpm
+    - restart nginx
+
+- name: create project path
+  become: yes
+  file:
+    state: directory
+    dest: "{{ project_path }}"
+    owner: "{{ ansible_user_id }}"
+    group: "{{ ansible_user_id }}"
+    recurse: yes
+
+- name: ensure var dir is writable
+  acl:
+    path: "{{ project_path }}"
+    entity: "{{ item[0] }}"
+    etype: user
+    permissions: "rwx"
+    state: present
+    recursive: true
+    default: "{{ item[1] }}"
+  with_nested:
+    - ["{{ ansible_user_id }}", "{{ web_user }}"]
+    - [false, true]
+
+
+- name: create deploy dir
+  deploy_helper:
+    state: present
+    path: "{{ project_path }}"
+
+- name: enable nginx service
+  become: yes
+  service: 
+    name: nginx
+    state: started
+    enabled: true

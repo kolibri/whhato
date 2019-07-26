@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - name: deploy whhato
+      include_role:
+        name: webserver
+        tasks_from: deploy

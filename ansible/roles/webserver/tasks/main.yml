@@ -31,6 +31,7 @@
   package:
     name:
       - acl
+      - certbot
       - curl
       - nginx
       - php7.2
@@ -74,25 +75,29 @@
     - restart fpm
     - restart nginx
 
-- name: create project path
+- name: "create directory {{ item }}"
   become: yes
   file:
     state: directory
-    dest: "{{ project_path }}"
+    dest: "{{ item }}"
     owner: "{{ ansible_user_id }}"
     group: "{{ ansible_user_id }}"
     recurse: yes
+  loop:
+    - "{{ project_path }}"
+    - "{{ letsencrypt_weboot }}{{ acme_challenge_path }}"
 
-- name: ensure var dir is writable
+- name: ensure directories are writable for webuser
   acl:
-    path: "{{ project_path }}"
-    entity: "{{ item[0] }}"
+    path: "{{ item[0] }}"
+    entity: "{{ item[1] }}"
     etype: user
     permissions: "rwx"
     state: present
     recursive: true
-    default: "{{ item[1] }}"
+    default: "{{ item[2] }}"
   with_nested:
+    - ["{{ project_path }}", "{{ letsencrypt_weboot }}"]
     - ["{{ ansible_user_id }}", "{{ web_user }}"]
     - [false, true]
 

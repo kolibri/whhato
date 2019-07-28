@@ -1,0 +1,5 @@
+[prod]
+whhato.vogelschwarz.de
+
+#[prod:vars]
+#ansible_host=91.250.116.246

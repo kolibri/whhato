@@ -23,7 +23,5 @@
     path: "{{ project_path }}"
     release: '{{ deploy_helper.new_release }}'
     state: finalize
-
-
-#- debug:
-#    var: deploy_helper
+  notify:
+    - restart fpm

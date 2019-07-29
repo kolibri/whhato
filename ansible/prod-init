@@ -1,0 +1,6 @@
+[init]
+whhato.vogelschwarz.de
+
+[init:vars]
+ansible_host=91.250.116.246
+ansible_user=root

@@ -6,3 +6,10 @@ index:
     path: /
     defaults: { _controller: 'App\Controller\WhhatoController::index' }
 
+connect_slack_start:
+    path: /connect/slack
+    defaults: { _controller: 'App\Controller\SlackController::connectAction' }
+
+connect_slack_check:
+    path: /connect/slack/check
+    defaults: { _controller: 'App\Controller\SlackController::connectCheckAction' }

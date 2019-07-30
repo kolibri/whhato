@@ -1,0 +1,7 @@
+---
+project_path: /opt/whhato/
+web_user: www-data
+tarball_path: "{{ playbook_dir }}/../whhato.tar.gz"
+letsencrypt_weboot: /var/www/letsencrypt
+acme_challenge_path: /.well-known/acme-challenge/
+hostname: whhato.vogelschwarz.de

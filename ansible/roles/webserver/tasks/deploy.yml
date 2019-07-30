@@ -1,0 +1,27 @@
+---
+- name: Initialize the deploy root and gather facts
+  deploy_helper:
+    path: "{{ project_path }}"
+
+- name: create new release dir
+  file:
+    state: directory
+    dest: '{{ deploy_helper.new_release_path }}'
+
+- name: extract tarball
+  unarchive:
+    src: "{{ tarball_path }}"
+    dest: '{{ deploy_helper.new_release_path }}'
+
+- name: Add an unfinished file, to allow cleanup on successful finalize
+  file:
+    path: '{{ deploy_helper.new_release_path }}/{{ deploy_helper.unfinished_filename }}'
+    state: touch
+
+- name: Finalize the deploy, removing the unfinished file and switching the symlink
+  deploy_helper:
+    path: "{{ project_path }}"
+    release: '{{ deploy_helper.new_release }}'
+    state: finalize
+  notify:
+    - restart fpm

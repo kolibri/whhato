@@ -1,0 +1,9 @@
+---
+- hosts: all
+  pre_tasks:
+    - debug: var=hostvars
+  roles:
+    - role: system
+      become: true
+      tags: init
+    - webserver

@@ -1,0 +1,58 @@
+---
+- name: update pacman
+  apt:
+    update_cache: yes
+    upgrade: yes
+
+- name: ensure base packages
+  package:
+    state: latest
+    name:
+      - curl
+      - wget
+      - sudo
+
+# setup user
+- name: ensure ko group
+  group:
+    name: "{{ ko_user_group }}"
+    state: present
+
+- name: ensure ko user
+  user:
+    name: "{{ ko_user_name }}"
+    groups: "{{ ko_user_group }}"
+    append: yes
+    generate_ssh_key: yes
+    #password: "{{ ko_user_pass }}"
+  register: ko_user_info
+
+- name: ensure root privileges for ko user
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: "^{{ ko_user_name }} ALL"
+    line: "{{ ko_user_name }} ALL=(ALL) NOPASSWD:ALL"
+    validate: "visudo -cf %s"
+
+- name: add authorized key of controll machine
+  authorized_key:
+    user: "{{ ko_user_name }}"
+    key: "{{ lookup('file', ko_authorized_key_file) }}"
+  when: ansible_connection != "local"
+
+# config ssh
+- name: ensure root login is disabled
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    line: PermitRootLogin no
+    regexp: "^PermitRootLogin.*$"
+  notify:
+    - restart ssh
+
+- name: ensure ssh service is enabled
+  service:
+    name: sshd
+    enabled: yes
+  notify:
+    - restart ssh

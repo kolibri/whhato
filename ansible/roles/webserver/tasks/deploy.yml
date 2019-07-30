@@ -13,6 +13,14 @@
     src: "{{ tarball_path }}"
     dest: '{{ deploy_helper.new_release_path }}'
 
+#- name: template config files
+#  become: yes
+#  template:
+#    src: "{{ item.src }}"
+#    dest: "{{ item.dest }}"
+#  loop:
+#    - {src: 'dotenv.j2', dest: "{{ deploy_helper.new_release_path }}/.env" }
+
 - name: Add an unfinished file, to allow cleanup on successful finalize
   file:
     path: '{{ deploy_helper.new_release_path }}/{{ deploy_helper.unfinished_filename }}'

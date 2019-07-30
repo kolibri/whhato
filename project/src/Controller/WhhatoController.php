@@ -27,7 +27,8 @@ class WhhatoController
 
         try {
             $message = $this->whhato->getRandomDateMessage($date);
-            return new JsonResponse(['text' => $message->format($date)]);
+
+            return new JsonResponse(['text' => $message->format($date), 'response_type' => 'in_channel',]);
         } catch (DateMessageNotFoundException $dateMessageNotFoundException) {
             return new JsonResponse(['text' => $dateMessageNotFoundException->getMessage()], 404);
         }

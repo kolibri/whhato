@@ -13,3 +13,7 @@ connect_slack_start:
 connect_slack_check:
     path: /connect/slack/check
     defaults: { _controller: 'App\Controller\SlackController::connectCheckAction' }
+
+#connect_finished:
+#    path: /connect/slack/finished
+#    defaults: { _controller: 'App\Controller\SlackController::connectFinishedAction' }

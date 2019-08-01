@@ -4,8 +4,8 @@ namespace App\Whhato;
 
 class DateMessage
 {
+    private const FORMAT_YEAR_MONTH_DAY = 'Y-m-d';
     private $monthDay;
-    private $day;
     private $message;
 
     public function __construct(string $monthDay, string $message)
@@ -28,7 +28,7 @@ class DateMessage
             foreach ($yearTokens[0] as $yearToken) {
                 $year = substr($yearToken, 1, -1);
                 $messageDate = \DateTime::createFromFormat(
-                    Whhato::FORMAT_YEAR_MONTH_DAY,
+                    self::FORMAT_YEAR_MONTH_DAY,
                     sprintf('%s-%s', $year, $this->monthDay)
                 );
 

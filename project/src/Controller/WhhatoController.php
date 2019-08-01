@@ -16,12 +16,12 @@ class WhhatoController
         $this->whhato = $whhato;
     }
 
-    public function index()
+    public function index(): Response
     {
         return new Response(file_get_contents(__DIR__ . '/../../data/index.html'));
     }
 
-    public function whatHappendToday()
+    public function whatHappendToday(): JsonResponse
     {
         $date = new \DateTime('now');
 

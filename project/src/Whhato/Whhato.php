@@ -4,16 +4,13 @@ namespace App\Whhato;
 
 class Whhato
 {
-    const FORMAT_MONTH_DAY = 'm-d';
-    const FORMAT_YEAR_MONTH_DAY = 'Y-m-d';
+    private const FORMAT_MONTH_DAY = 'm-d';
 
-    private $loader;
     private $dateMessages;
 
     public function __construct(Loader $loader, string $dataPath)
     {
-        $this->loader = $loader;
-        foreach ($this->loader->loadDataPath($dataPath) as $dateMessage) {
+        foreach ($loader->loadDataPath($dataPath) as $dateMessage) {
             $this->addDateMessage($dateMessage);
         }
     }
@@ -37,7 +34,7 @@ class Whhato
         return $this->dateMessages[$monthDay];
     }
 
-    private function addDateMessage(DateMessage $dateMessage)
+    private function addDateMessage(DateMessage $dateMessage): void
     {
         $this->dateMessages[$dateMessage->getMonthDay()][] = $dateMessage;
     }

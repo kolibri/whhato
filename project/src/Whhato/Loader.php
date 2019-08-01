@@ -11,14 +11,13 @@ class Loader
     {
         $finder = new Finder();
         $finder->files()->in($path)->name('/\.yaml$/');
-
         $buffer = [];
 
         foreach ($finder as $item) {
-            $buffer = \array_merge($buffer, Yaml::parse(file_get_contents($item->getRealPath())));
+            $buffer[] = Yaml::parse(file_get_contents($item->getRealPath()));
         }
 
-        return $this->flattenRawArray($buffer);
+        return $this->flattenRawArray(array_merge(...$buffer));
     }
 
     private function flattenRawArray(array $raw): array
@@ -26,8 +25,7 @@ class Loader
         $buffer = [];
         foreach ($raw as $monthDay => $dateMessages) {
             foreach ($dateMessages as $dateMessage) {
-                $monthDayArray = explode('-', $monthDay);
-                $buffer[] = new DateMessage($monthDayArray[0], $monthDayArray[1], $dateMessage);
+                $buffer[] = new DateMessage($monthDay, $dateMessage);
             }
         }
 

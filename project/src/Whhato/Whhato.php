@@ -39,7 +39,6 @@ class Whhato
 
     private function addDateMessage(DateMessage $dateMessage)
     {
-        $monthDay = sprintf('%s-%s', $dateMessage->getMonth(), $dateMessage->getDay());
-        $this->dateMessages[$monthDay][] = $dateMessage;
+        $this->dateMessages[$dateMessage->getMonthDay()][] = $dateMessage;
     }
 }

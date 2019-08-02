@@ -19,7 +19,7 @@ class DateMessage
         return $this->monthDay;
     }
 
-    public function format(\DateTime $date): string
+    public function format(\DateTimeInterface $date): string
     {
         $replace = [];
 
@@ -32,7 +32,7 @@ class DateMessage
                     sprintf('%s-%s', $year, $this->monthDay)
                 );
 
-                $replace[$yearToken] = $date->diff($messageDate)->y;
+                $replace[$yearToken] = (int) $date->format('Y') - (int) $messageDate->format('Y');
             }
         }
 

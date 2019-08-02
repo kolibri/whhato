@@ -140,9 +140,6 @@
     "symfony/http-kernel": {
         "version": "v4.0.1"
     },
-    "symfony/lts": {
-        "version": "4-dev"
-    },
     "symfony/mime": {
         "version": "v4.3.3"
     },

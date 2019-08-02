@@ -8,14 +8,12 @@ class Whhato
 
     private $dateMessages;
 
-    public function __construct(Loader $loader, string $dataPath)
+    public function __construct(Loader $loader)
     {
-        foreach ($loader->loadDataPath($dataPath) as $dateMessage) {
-            $this->addDateMessage($dateMessage);
-        }
+        $this->dateMessages = $loader->loadDataPath();
     }
 
-    public function getRandomDateMessage(\DateTime $date): DateMessage
+    public function getRandomDateMessage(\DateTimeInterface $date): DateMessage
     {
         $messages = $this->getDateMessages($date);
         $rand = array_rand($messages); // Leave this for debugging ;)
@@ -23,7 +21,8 @@ class Whhato
         return $messages[$rand];
     }
 
-    public function getDateMessages(\DateTime $date): array
+    /** @return DateMessage[] */
+    public function getDateMessages(\DateTimeInterface $date): array
     {
         $monthDay = $date->format(self::FORMAT_MONTH_DAY);
 
@@ -32,10 +31,5 @@ class Whhato
         }
 
         return $this->dateMessages[$monthDay];
-    }
-
-    private function addDateMessage(DateMessage $dateMessage): void
-    {
-        $this->dateMessages[$dateMessage->getMonthDay()][] = $dateMessage;
     }
 }

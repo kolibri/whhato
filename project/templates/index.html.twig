@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Whhato - A what happened today webservice</h1>
+
+    <p>This is about the slack plugin whhato</p>
+
+    <a href="{{ path('connect_slack_start') }}">
+        <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
+             srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x">
+    </a>
+    <h2>Ehm, please, what?</h2>
+    <p>
+        Long story is: I'm used to tell the people on work every morning something, that happened on this day.
+        Like celebrity birthdays, interesting inventions, opera/musical first openings and other trivia.
+        And this is my approach, to automate this stuff with the newly created webservice whhato.vogelschwarz.de
+        (WHat HAppened TOday, if you wonder about the name).
+    </p>
+
+    <h2>Documentation, if you need it</h2>
+    <p>
+        Install the app by clicking the nice button shaped image above.
+        Type <code>/whhato</code> in your slack. Hit <code>Enter</code> and turn your german speacking part of the brain on.<br />
+        Now, you should be amazed by what happened this day some years ago.<br />
+        If not, try again<br />
+        Use this every morning to start your work. (At least this, how I use it).
+    </p>
+
+    <h2>Contact, Imprint and all the other legal stuff</h2>
+    <p>
+        Who made it? Lukas Sadzik, software developer, hummingbird fan, reader and other things.<br />
+        How to contact this guy? Try writing an email at lukas.sadzik @ gmail.com. Or use twitter <a href="https://twitter.com/ko_libri" target="_blank">@ko_libri</a>.<br />
+        Do you want money? Yes, but not from you, not for this. You pay nothing and keep your expectations low,
+        I will keep this thing running as long I can. Probably forever at some point.<br />
+        Why do you do this? Start reading from top again.<br />
+        But, I want to give you money! I dont care. Search for "donation mental health".
+        You'll probably find someone or something, who will take the money.
+        It's the same amount of work, I would have to figure out how I can get money from the internet. ;)
+        Also, if mental health is not your style, try something about integrating people, regardless of the why.
+    </p>
+    <h2>Technical stuff</h2>
+    <p>
+        The Slack App only provides a slashcommand <code>/whhato</code>, that calls <code>https://whhato.vogelschwarz.de/whhato</code>.
+        This returns a Json like <code>{"text":"Its been 227 years since this day in 1792"}</code><br />
+        Every Tutorial about making a slack slash command would have more features than this.<br />
+        <a href="https://github.com/kolibri/whhato/">Check this out on github</a>
+    </p>
+
+    <p><a href="{{ path('overview') }}">Available Messages</a></p>
+{% endblock %}

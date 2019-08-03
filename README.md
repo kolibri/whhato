@@ -34,3 +34,6 @@ make STAGE=prod provision
 make STAGE=prod deploy
 ```
 
+## Contributing new Messages
+
+Edit the file `./project/data/prod/data.yaml` and create a pull request on github.

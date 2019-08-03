@@ -10,7 +10,7 @@ class LoaderTest extends TestCase
 {
     public function testCanLoadDataFromYamlFiles(): void
     {
-        $loader = new Loader(__DIR__ . '/LoaderTestData');
+        $loader = new Loader(__DIR__.'/LoaderTestData');
 
         static::assertEquals([
             '01-25' => [new DateMessage('01-25', '{2015} years since 2015')],

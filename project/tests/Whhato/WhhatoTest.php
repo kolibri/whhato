@@ -8,7 +8,6 @@ use App\Whhato\DateMessage;
 use App\Whhato\DateMessageNotFoundException;
 use App\Whhato\Loader;
 use App\Whhato\Whhato;
-use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class WhhatoTest extends TestCase
@@ -48,7 +47,7 @@ class WhhatoTest extends TestCase
         $whhato = new Whhato($loader);
 
         $results = [];
-        for ($i=0; $i <50; $i++) {
+        for ($i = 0; $i < 50; ++$i) {
             $date0125 = \DateTimeImmutable::createFromFormat('d.m.Y', '25.01.2020');
             $msg = $whhato->getRandomDateMessage($date0125);
             $isOneOfPossible = ('Something happened 5 years ago' === $msg->format($date0125) ||
@@ -60,7 +59,7 @@ class WhhatoTest extends TestCase
             $results[$msg->format($date0125)] = true;
         }
 
-        if(2 !== count($results)) {
+        if (2 !== count($results)) {
             $this->fail('Always got the same result for 50 times. Probably a bug.');
         }
 

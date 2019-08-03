@@ -1,42 +1,46 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\Controller;
 
 use App\Whhato\DateMessageNotFoundException;
 use App\Whhato\Whhato;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+use Twig\Environment;
 
 class WhhatoController
 {
-    private $whhato;
-
-    public function __construct(Whhato $whhato)
-    {
-        $this->whhato = $whhato;
-    }
-
-    public function index(): Response
-    {
-        return new Response(file_get_contents(__DIR__ . '/../../data/index.html'));
-    }
-
-    public function whatHappenedToday(): JsonResponse
+    /** @Route("/whhato/{dateString<\d\d-\d\d-\d\d\d\d>}", name="whhato", methods={"GET", "HEAD"})) */
+    public function whatHappenedToday(Whhato $whhato, string $dateString = ''): JsonResponse
     {
         $date = new \DateTime('now');
 
-        try {
-            $message = $this->whhato->getRandomDateMessage($date);
+        if ('' !== $dateString) {
+            dump($dateString);
+            $date = \DateTimeImmutable::createFromFormat('d-m-Y', $dateString);
+        }
 
-            return new JsonResponse(['text' => $message->format($date), 'response_type' => 'in_channel',]);
+        try {
+            $message = $whhato->getRandomDateMessage($date);
+
+            return new JsonResponse(['text' => $message->format($date), 'response_type' => 'in_channel']);
         } catch (DateMessageNotFoundException $dateMessageNotFoundException) {
             return new JsonResponse(['text' => $dateMessageNotFoundException->getMessage()], 404);
         }
     }
 
-    public function overview(): Response
+    /** @Route("/", name="index", methods={"GET", "HEAD"}) */
+    public function index(Environment $twig): Response
     {
+        return new Response($twig->render('index.html.twig'));
+    }
 
+    /** @Route("/overview", name="overview", methods={"GET", "HEAD"}) */
+    public function overview(Whhato $whhato, Environment $twig)
+    {
+        return new Response($twig->render('overview.html.twig', ['all' => $whhato->overview()]));
     }
 }

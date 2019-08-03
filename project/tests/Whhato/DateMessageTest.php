@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Tests\Whhato;
-
 
 use App\Whhato\DateMessage;
 use PHPUnit\Framework\TestCase;

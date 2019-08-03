@@ -49,9 +49,16 @@ class WhhatoControllerTest extends WebTestCase
         );
     }
 
+    public function testWhatHappenedTodayActionWithWrongDateFormatGivesNotFound(): void
+    {
+        $client = static::createClient();
+        $client->request('GET', '/whhato/foobar');
+        static::assertTrue($client->getResponse()->isNotFound());
+    }
+
     public function testProdReturnsSomething()
     {
-        $client = static::createClient(['environment' => 'prod','debug' => false]);
+        $client = static::createClient(['environment' => 'prod', 'debug' => false]);
         $client->request('GET', '/whhato');
         $response = json_decode($client->getResponse()->getContent(), true);
         static::assertTrue($client->getResponse()->isSuccessful());
@@ -71,7 +78,7 @@ class WhhatoControllerTest extends WebTestCase
      */
     private function calcExpectedMessage(\DateTimeInterface $givenDate): string
     {
-        $expectedYear = 2001 - (int)$givenDate->format('z');
+        $expectedYear = 2001 - (int) $givenDate->format('z');
 
         return sprintf(
             'Its been %s years since this day in %s',
@@ -79,6 +86,4 @@ class WhhatoControllerTest extends WebTestCase
             $expectedYear
         );
     }
-
 }
-

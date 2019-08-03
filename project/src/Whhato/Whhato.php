@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\Whhato;
 
@@ -41,9 +43,9 @@ class Whhato
     public function overview()
     {
         $buffer = [];
-        for ($dayOfYear = 0; $dayOfYear < 366; $dayOfYear++) {
-            $month = \DateTimeImmutable::createFromFormat('z', (string)$dayOfYear)->format('m');
-            $day = \DateTimeImmutable::createFromFormat('z', (string)$dayOfYear)->format('d');
+        for ($dayOfYear = 0; $dayOfYear < 366; ++$dayOfYear) {
+            $month = \DateTimeImmutable::createFromFormat('z', (string) $dayOfYear)->format('m');
+            $day = \DateTimeImmutable::createFromFormat('z', (string) $dayOfYear)->format('d');
             $date = \DateTimeImmutable::createFromFormat('Y-m-d', sprintf('%s-%s-%s', '1996', $month, $day));
 
             if (!array_key_exists($month, $buffer)) {

@@ -11,6 +11,5 @@ install:
   - ./bin/phpunit install
 
 script:
-  - cd project
   - ./bin/console lint:yaml data
   - ./bin/phpunit

@@ -69,7 +69,7 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   loop:
-    - {src: 'vhost.conf.j2', dest: '/etc/nginx/sites-enabled/default' }
+    - {src: '{{ vhost_template }}', dest: '/etc/nginx/sites-enabled/default' }
     - {src: 'pool.conf.j2', dest: '/etc/php/7.2/fpm/pool.d/www.conf' }
   notify:
     - restart fpm
@@ -85,7 +85,7 @@
     recurse: yes
   loop:
     - "{{ project_path }}"
-    - "{{ letsencrypt_weboot }}{{ acme_challenge_path }}"
+    - "{{ letsencrypt_webroot }}{{ acme_challenge_path }}"
 
 - name: ensure directories are writable for webuser
   acl:
@@ -97,10 +97,9 @@
     recursive: true
     default: "{{ item[2] }}"
   with_nested:
-    - ["{{ project_path }}", "{{ letsencrypt_weboot }}"]
+    - ["{{ project_path }}", "{{ letsencrypt_webroot }}"]
     - ["{{ ansible_user_id }}", "{{ web_user }}"]
     - [false, true]
-
 
 - name: create deploy dir
   deploy_helper:

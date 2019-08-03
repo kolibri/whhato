@@ -21,13 +21,13 @@ vagrant-full-init:
 	$(MAKE) deploy
 
 provision-init:
-	ansible-playbook -i ansible/$(STAGE)-init ansible/provision.yml --tags=init
+	ansible-playbook -i ansible/$(STAGE)-init ansible/provision.yml --tags=init -v
 
 provision:
-	ansible-playbook -i ansible/$(STAGE) ansible/provision.yml
+	ansible-playbook -i ansible/$(STAGE) ansible/provision.yml -v
 
 deploy:
-	ansible-playbook -i ansible/$(STAGE) ansible/deploy.yml
+	ansible-playbook -i ansible/$(STAGE) ansible/deploy.yml -v
 
 install:
 	cd project && composer install --no-interaction --prefer-dist --optimize-autoloader

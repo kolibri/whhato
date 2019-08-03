@@ -3,4 +3,4 @@ whhato.stage
 
 [stage:vars]
 ansible_host=192.168.31.251
-
+vhost_template=vhost_simple.conf.j2

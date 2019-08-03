@@ -7,27 +7,45 @@ use Symfony\Component\Yaml\Yaml;
 
 class Loader
 {
-    public function loadDataPath(string $path): array
+
+    private $dataPath;
+
+    public function __construct(string $dataPath)
+    {
+        $this->dataPath = $dataPath;
+    }
+
+
+    public function loadDataPath(): array
     {
         $finder = new Finder();
-        $finder->files()->in($path)->name('/\.yaml$/');
-
+        $finder->files()->in($this->dataPath)->name('/\.yaml$/');
         $buffer = [];
 
         foreach ($finder as $item) {
             $buffer = \array_merge($buffer, Yaml::parse(file_get_contents($item->getRealPath())));
         }
 
-        return $this->flattenRawArray($buffer);
+        array_walk($buffer, function (&$messages, $monthDay) {
+            $messages = array_map(function ($message) use ($monthDay) {
+                return new DateMessage($monthDay, $message);
+            }, $messages ?? []);
+        });
+
+        return array_filter($buffer);
+
+#        return $this->flattenRawArray($buffer);
     }
 
     private function flattenRawArray(array $raw): array
     {
         $buffer = [];
         foreach ($raw as $monthDay => $dateMessages) {
+            if (!is_array($dateMessages)) {
+                continue;
+            }
             foreach ($dateMessages as $dateMessage) {
-                $monthDayArray = explode('-', $monthDay);
-                $buffer[] = new DateMessage($monthDayArray[0], $monthDayArray[1], $dateMessage);
+                $buffer[] = new DateMessage($monthDay, $dateMessage);
             }
         }
 

@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Whhato\DateMessageNotFoundException;
 use App\Whhato\Whhato;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class WhhatoController
@@ -16,12 +17,12 @@ class WhhatoController
         $this->whhato = $whhato;
     }
 
-    public function index()
+    public function index(): Response
     {
         return new Response(file_get_contents(__DIR__ . '/../../data/index.html'));
     }
 
-    public function whatHappendToday()
+    public function whatHappenedToday(): JsonResponse
     {
         $date = new \DateTime('now');
 
@@ -32,5 +33,10 @@ class WhhatoController
         } catch (DateMessageNotFoundException $dateMessageNotFoundException) {
             return new JsonResponse(['text' => $dateMessageNotFoundException->getMessage()], 404);
         }
+    }
+
+    public function overview(): Response
+    {
+
     }
 }

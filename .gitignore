@@ -8,3 +8,4 @@
 ###< symfony/framework-bundle ###
 project/.idea
 whhato.tar.gz
+coverage/

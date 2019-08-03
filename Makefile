@@ -24,6 +24,10 @@ test:
 	cd project && ./bin/console lint:yaml data
 	cd project && ./bin/phpunit
 
+test-coverage:
+	cd project && ./bin/phpunit --coverage-html=../coverage tests/Whhato
+
+
 tarball: install
 	rm -f whhato.tar.gz
 	cd project && tar -czf ../whhato.tar.gz .

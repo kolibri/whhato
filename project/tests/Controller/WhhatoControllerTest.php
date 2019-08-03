@@ -13,11 +13,19 @@ class WhhatoControllerTest extends WebTestCase
         $client = static::createClient();
         $crawler = $client->request('GET', '/');
         static::assertTrue($client->getResponse()->isSuccessful());
-        static::assertTrue(0 < $crawler->filter('h1')->count());
-
+        static::assertGreaterThan(0, $crawler->filter('h1')->count());
     }
 
-    public function testWhatHappenedTodayAction(): void
+    public function testOverviewWorks()
+    {
+        $client = static::createClient();
+        $crawler = $client->request('GET', '/overview');
+        static::assertTrue($client->getResponse()->isSuccessful());
+        static::assertSame(12, $crawler->filter('li.month')->count());
+        static::assertSame(365, $crawler->filter('li.day')->count());
+    }
+
+    public function testWhatHappenedTodayActionWithoutGivenDate(): void
     {
         $client = static::createClient();
         $client->request('GET', '/whhato');
@@ -27,6 +35,16 @@ class WhhatoControllerTest extends WebTestCase
                 '{"text":"%s","response_type":"in_channel"}',
                 $this->calcExpectedMessage(new \DateTimeImmutable())
             ),
+            $client->getResponse()->getContent()
+        );
+    }
+
+    public function testWhatHappenedTodayActionWithGivenDate(): void
+    {
+        $client = static::createClient();
+        $client->request('GET', '/whhato/25-01-2015');
+        static::assertTrue($client->getResponse()->isSuccessful());
+        static::assertSame('{"text":"Its been 38 years since this day in 1977","response_type":"in_channel"}',
             $client->getResponse()->getContent()
         );
     }

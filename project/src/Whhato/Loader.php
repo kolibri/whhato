@@ -7,14 +7,12 @@ use Symfony\Component\Yaml\Yaml;
 
 class Loader
 {
-
     private $dataPath;
 
     public function __construct(string $dataPath)
     {
         $this->dataPath = $dataPath;
     }
-
 
     public function loadDataPath(): array
     {
@@ -33,22 +31,5 @@ class Loader
         });
 
         return array_filter($buffer);
-
-#        return $this->flattenRawArray($buffer);
-    }
-
-    private function flattenRawArray(array $raw): array
-    {
-        $buffer = [];
-        foreach ($raw as $monthDay => $dateMessages) {
-            if (!is_array($dateMessages)) {
-                continue;
-            }
-            foreach ($dateMessages as $dateMessage) {
-                $buffer[] = new DateMessage($monthDay, $dateMessage);
-            }
-        }
-
-        return $buffer;
     }
 }

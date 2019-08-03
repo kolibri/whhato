@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Whhato\DateMessageNotFoundException;
+use App\Whhato\Overview;
 use App\Whhato\Whhato;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,9 +17,14 @@ class WhhatoController
         return new Response($twig->render('index.html.twig'));
     }
 
-    public function whatHappenedToday(Whhato $whhato): JsonResponse
+    public function whatHappenedToday(string $dateString, Whhato $whhato): JsonResponse
     {
         $date = new \DateTime('now');
+
+        if('' !== $dateString) {
+            dump($dateString);
+            $date = \DateTimeImmutable::createFromFormat('d-m-Y', $dateString);
+        }
 
         try {
             $message = $whhato->getRandomDateMessage($date);
@@ -27,5 +33,10 @@ class WhhatoController
         } catch (DateMessageNotFoundException $dateMessageNotFoundException) {
             return new JsonResponse(['text' => $dateMessageNotFoundException->getMessage()], 404);
         }
+    }
+
+    public function overview(Whhato $whhato, Environment $twig)
+    {
+        return new Response($twig->render('overview.html.twig', ['all' => $whhato->overview()]));
     }
 }

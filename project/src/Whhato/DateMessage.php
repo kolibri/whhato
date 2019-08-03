@@ -19,6 +19,11 @@ class DateMessage
         return $this->monthDay;
     }
 
+    public function getRawMessage(): string
+    {
+        return $this->message;
+    }
+
     public function format(\DateTimeInterface $date): string
     {
         $replace = [];

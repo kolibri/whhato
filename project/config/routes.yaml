@@ -1,10 +1,20 @@
 whhato:
-    path: /whhato
-    defaults: { _controller: 'App\Controller\WhhatoController::whatHappenedToday' }
+    path: /whhato/{dateString}
+    requirements:
+        dateString: '^(\d{2})-(\d{2})-(\d{4})$'
+    defaults:
+        dateString: ''
+        _controller: 'App\Controller\WhhatoController::whatHappenedToday'
+
 
 index:
     path: /
     defaults: { _controller: 'App\Controller\WhhatoController::index' }
+
+overview:
+    path: /overview
+    defaults: { _controller: 'App\Controller\WhhatoController::overview' }
+
 
 connect_slack_start:
     path: /connect/slack

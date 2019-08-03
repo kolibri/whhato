@@ -6,10 +6,7 @@ before_script:
   - composer self-update
 
 install:
-  - cd project
-  - composer install
-  - ./bin/phpunit install
+  - make install
 
 script:
-  - ./bin/console lint:yaml data
-  - ./bin/phpunit
+  - make test

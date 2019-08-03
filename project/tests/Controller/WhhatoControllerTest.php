@@ -8,6 +8,15 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class WhhatoControllerTest extends WebTestCase
 {
+    public function testIndexPageWorks()
+    {
+        $client = static::createClient();
+        $crawler = $client->request('GET', '/');
+        static::assertTrue($client->getResponse()->isSuccessful());
+        static::assertTrue(0 < $crawler->filter('h1')->count());
+
+    }
+
     public function testWhatHappenedTodayAction(): void
     {
         $client = static::createClient();

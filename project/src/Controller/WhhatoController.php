@@ -13,7 +13,7 @@ use Twig\Environment;
 
 class WhhatoController
 {
-    /** @Route("/whhato/{dateString<\d\d-\d\d-\d\d\d\d>}", name="whhato", methods={"GET", "HEAD"})) */
+    /** @Route("/whhato/{dateString<\d\d-\d\d-\d\d\d\d>}", name="whhato", methods={"GET", "HEAD", "POST"})) */
     public function whatHappenedToday(Whhato $whhato, string $dateString = ''): JsonResponse
     {
         $date = new \DateTime('now');

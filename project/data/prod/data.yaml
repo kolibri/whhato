@@ -282,7 +282,8 @@
 08-10: ~
 08-11: ~
 08-12: ~
-08-13: ~
+08-13:
+    - 'Moritz Bleibtreu wird heute {1971}'
 #1948: Österreich wird Mitglied in der UNESCO.
 #1999: Die bereits seit 1868 in Gebrauch befindliche Sonnenscheibenflagge wird formell als Nationalflagge Japans eingeführt.
 # 1913: Harry Brearley gelingt die Erfindung rostfreien Stahls.
@@ -292,7 +293,6 @@
 #1996: Der Belgier Marc Dutroux und zwei Komplizen werden wegen Verdachts auf Entführung von Sabine Dardenne und Laetitia Delhez verhaftet. Bei den weiteren polizeilichen Ermittlungen werden mehrere Kindesentführungen zum Zweck sexuellen Missbrauchs der Opfer und Ermordungen aufgedeckt.
 #Alfred Hitchcock     (* 1899)
 #1926: *Fidel Castro, kubanischer Revolutionär, Regierungschef und Präsident mit diktatorischem Führungsanspruch
-    - 'Moritz Bleibtreu wird heute {1971}'
 #1971: *Heike Makatsch, deutsche Schauspielerin
 #2009: +Les Paul, US-amerikanischer Gitarrist
 
@@ -307,14 +307,14 @@
 
 08-15:
     - 'Seit {1795} Jahren kann (und soll) man in Frankreich mit dem Franc bezahlen, und nicht mehr mit dem Livre.'
-    - '{1992} Jahre ist es jetzt her, dass Nintendo die Videospielkonsole SNES auch in Deutschland veröffentlicht wird'.
-    - '{1977} zuvor: Der Astrophysiker Jerry R. Ehman empfängt mit dem „Big Ear“-Radioteleskop ein Schmalband-Radiosignal aus dem Sternbild Schütze. Es soll als potentielle Nachricht von Aliens unter dem Namen "Wow-Signal" berühmt werden.'
+    - '{1992} Jahre ist es jetzt her, dass Nintendo die Videospielkonsole SNES auch in Deutschland veröffentlicht wird.'
+    - '{1977} zuvor: Der Astrophysiker Jerry R. Ehman empfängt mit dem "Big Ear"-Radioteleskop ein Schmalband-Radiosignal aus dem Sternbild Schütze. Es soll als potentielle Nachricht von Aliens unter dem Namen "Wow-Signal" berühmt werden.'
     - 'Mit 55.600 Besuchern stellen die Beatles ihren eigenen Besucherrekord auf. Das passierte vor {1965} Jahren im New Yorker Shea Stadium.'
     - 'Auch interessant: Napoleon Bonaparte und Ben Affleck haben beide heute Geburtstag. Sie werden {1769} und {1972}'
 
 08-16:
     - 'Ian Murdock hat heute vor {1993} das Debian Projekt ins Leben gerufen. Danke dafür!'
-    - 'Ginger Alden fand heute vor {1977} Jahren ihren Verlobten Elvis Presley tot in seinem Zimmer auf Graceland'.
+    - 'Ginger Alden fand heute vor {1977} Jahren ihren Verlobten Elvis Presley tot in seinem Zimmer auf Graceland.'
     - 'Ted Bundy erlebte vor exakt {1975} Jahren seine erste von drei Verhaftung.'
     - 'Es ist unklar, ob Madonna ihren Geburtstag noch feiert. Sicher, sie wird heute stolze {1958} Jahre alt, aber seit {2018} Jahren wirft der Tod von Aretha Franklin ebenfalls seinen Schatten auf diesen Tag.'
 #1962: *Steve Carell, US-amerikanischer Schauspieler und Comedian

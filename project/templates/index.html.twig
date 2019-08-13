@@ -20,19 +20,21 @@
     <h2>Documentation, if you need it</h2>
     <p>
         Install the app by clicking the nice button shaped image above.
-        Type <code>/whhato</code> in your slack. Hit <code>Enter</code> and turn your german speacking part of the brain on.<br />
-        Now, you should be amazed by what happened this day some years ago.<br />
-        If not, try again<br />
+        Type <code>/whhato</code> in your slack. Hit <code>Enter</code> and turn your german speacking part of the brain
+        on.<br/>
+        Now, you should be amazed by what happened this day some years ago.<br/>
+        If not, try again<br/>
         Use this every morning to start your work. (At least this, how I use it).
     </p>
 
     <h2>Contact, Imprint and all the other legal stuff</h2>
     <p>
-        Who made it? Lukas Sadzik, software developer, hummingbird fan, reader and other things.<br />
-        How to contact this guy? Try writing an email at lukas.sadzik @ gmail.com. Or use twitter <a href="https://twitter.com/ko_libri" target="_blank">@ko_libri</a>.<br />
+        Who made it? Lukas Sadzik, software developer, hummingbird fan, reader and other things.<br/>
+        How to contact this guy? Try writing an email at lukas.sadzik @ gmail.com. Or use twitter <a
+                href="https://twitter.com/ko_libri" target="_blank">@ko_libri</a>.<br/>
         Do you want money? Yes, but not from you, not for this. You pay nothing and keep your expectations low,
-        I will keep this thing running as long I can. Probably forever at some point.<br />
-        Why do you do this? Start reading from top again.<br />
+        I will keep this thing running as long I can. Probably forever at some point.<br/>
+        Why do you do this? Start reading from top again.<br/>
         But, I want to give you money! I dont care. Search for "donation mental health".
         You'll probably find someone or something, who will take the money.
         It's the same amount of work, I would have to figure out how I can get money from the internet. ;)
@@ -41,10 +43,17 @@
     <h2>Technical stuff</h2>
     <p>
         The Slack App only provides a slashcommand <code>/whhato</code>, that calls <code>https://whhato.vogelschwarz.de/whhato</code>.
-        This returns a Json like <code>{"text":"Its been 227 years since this day in 1792"}</code><br />
-        Every Tutorial about making a slack slash command would have more features than this.<br />
+        This returns a Json like <code>{"text":"Its been 227 years since this day in 1792"}</code><br/>
+        Every Tutorial about making a slack slash command would have more features than this.<br/>
         <a href="https://github.com/kolibri/whhato/">Check this out on github</a>
     </p>
 
     <p><a href="{{ path('overview') }}">Available Messages</a></p>
 {% endblock %}
+
+
+    {% if true == something %}
+        {% block javascripts %}
+            foo
+        {% endblock %}
+    {% endif %}

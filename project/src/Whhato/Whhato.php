@@ -35,12 +35,12 @@ class Whhato
         return $this->dateMessages[$monthDay];
     }
 
-    public function hasDateMessage(\DateTimeInterface $date)
+    public function hasDateMessage(\DateTimeInterface $date): bool
     {
         return array_key_exists($date->format(self::FORMAT_MONTH_DAY), $this->dateMessages);
     }
 
-    public function overview()
+    public function overview(): array
     {
         $buffer = [];
         for ($dayOfYear = 0; $dayOfYear < 366; ++$dayOfYear) {

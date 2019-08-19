@@ -6,7 +6,7 @@ full-deploy:
 	$(MAKE) test
 	$(MAKE) tarball
 #	$(MAKE) provision
-#	$(MAKE) deploy
+	$(MAKE) deploy
 
 vagrant-start:
 	vagrant up

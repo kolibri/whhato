@@ -5,8 +5,8 @@ full-deploy:
 	$(MAKE) install
 	$(MAKE) test
 	$(MAKE) tarball
-	$(MAKE) provision
-	$(MAKE) deploy
+#	$(MAKE) provision
+#	$(MAKE) deploy
 
 vagrant-start:
 	vagrant up
@@ -47,6 +47,12 @@ cs-fixer:
 
 clean:
 	rm -rf project/var/cache/*
+
+
+docker-build:
+	docker build -t whhato-deploy .
+docker-run: docker-build
+	docker run -ti whhato-deploy
 
 
 tarball: install

@@ -278,7 +278,10 @@
 #1963: Beim „Großen Postzugraub“ überfallen Bruce Reynolds, Ronald Biggs und mindestens weitere 13 Männer einen Postzug von Glasgow nach London und rauben 2,63 Mio. GBP (entspricht heute ungefähr 50 Millionen Euro).
 #1929: Das deutsche Luftschiff Graf Zeppelin beginnt seine Weltumrundung.
 #Paul Dirac(* 1902)
-08-09: ~
+08-09: 
+    - "Vor {1173} Jahren wurde der Grundstein für den Campanile gelegt. Dieser Turm neben dem Dom von Pisa wird später einmal als 'Der Schiefe Turm von Pisa' bekannt werden."
+    - "Whitney Houston hätte heute ihren {1963}. Geburtstag gefeiert."
+
 08-10: ~
 08-11: ~
 08-12: ~
@@ -340,85 +343,63 @@
 #1227: +Dschingis Khan, hochmittelalterlicher Khan der Mongolen
 #2018: +Kofi Annan, ghanaischer Diplomat, UN-Generalsekretär, Nobelpreisträger
 
-08-19: ~
+08-19:
+    - 'Bill Clinton wird heute {1946} Jahre alt.'
 #1992: Bei der „Aktion Standesamt“ beantragen bundesweit 250 gleichgeschlechtliche Paare bei Standesämtern das Aufgebot zur Eheschließung, um damit auf die rechtlose Situation gleichgeschlechtlicher Paare in Deutschland aufmerksam zu machen und die Diskussion über die „Homo-Ehe“ in Gang zu setzen.
-#1946: *Bill Clinton, 42. Präsident der Vereinigten Staaten
 #1952:* Jonathan Frakes, US-amerikanischer Schauspieler und Regisseur
-08-20: ~
-#2018: Greta Thunberg beginnt ihren Schulstreik für das Klima vor dem Schwedischen Reichstag in Stockholm und legt damit den Grundstein für die Schüler- und Studierendenbewegung Fridays for Future.
-#1960: Als erste Lebewesen kehren im Rahmen der Sputnik 5-Mission die tags zuvor in das Weltall geschossenen Hunde „Belka“ und „Strelka“ in ihrer Landekapsel wohlbehalten auf sowjetische Erde zurück.
-08-21: ~
-#1888: William Seward Burroughs erhält das US-Patent Nummer 388.116 auf das von ihm erfundene Modell einer Rechenmaschine.
-#1961: Als erstes Verkehrsflugzeug durchbricht eine Douglas DC-8 beim Sinkflug die Schallmauer.
-#1911: Bei Renovierungsarbeiten im Louvre wird Leonardo da Vincis Mona Lisa entwendet.
-#1987: Der Tanz-Film Dirty Dancing feiert seine US-Premiere.
-#1992: *RJ Mitte, US-amerikanischer Schauspieler
-#1967: *Carrie-Anne Moss, kanadische Schauspielerin
-08-22: ~
-#1864: Zwölf Staaten unterzeichnen die erste Genfer Konvention, die Grundlage des humanitären Völkerrechts.
-#1950: In Deutschland wird das Technische Hilfswerk (THW) als Zivil- und Katastrophenschutzorganisation des Bundes gegründet.
-#1999: Die GPS-Wochen-Zählung für das Satelliten-Navigationssystem Global Positioning System erreicht die GPS-Woche 1023 und somit die maximale Ausnutzung. Sie wird zurück auf 0 gestellt und somit wieder zurück auf den 6. Januar 1980 datiert. Erwartete Pannen bleiben aus.
-#2004: Bei einem bewaffneten Raubüberfall entwenden maskierte Täter die beiden Gemälde Der Schrei und Madonna von Edvard Munch aus dem Munch-Museum Oslo, während gleichzeitig an anderer Stelle in Oslo ein Überfall auf einen Geldtransporter stattfindet, im Verlaufe dessen ein Polizist erschossen wird.
-#1917: *John Lee Hooker, US-amerikanischer Bluesmusiker
-#1920: *Ray Bradbury, US-amerikanischer Schriftsteller und Drehbuchautor
-#2011: +Loriot, deutscher Humorist, Karikaturist, Schauspieler und Regisseur
-08-23: ~
-#1305: Der schottische Nationalheld William Wallace wird in Smithfield bei London öffentlich mittels grausamster Martern zu Tode gequält.
-#1904: Der US-Amerikaner Harry D. Weed erhält ein Patent auf die von ihm erfundene Schneekette für Autos.
-#1966: Das erste Bild von der Erde, die über dem Mond aufgeht, wird von der Mondsonde Lunar Orbiter 1 zur terrestrischen Bodenstation gefunkt.
-#1976: Am Stausee Lac du Vieux Emosson im Kanton Wallis werden gut erhaltene Fußabdrücke von Dinosauriern entdeckt. Die Spuren sind etwa 250 Millionen Jahre alt.
-#2006: Die 18-jährige Natascha Kampusch entkommt nach achteinhalb Jahren Gefangenschaft ihrem Entführer Wolfgang Přiklopil in Niederösterreich.
-08-24: ~
+08-20:
+    - '{1960} Jahre ist es nun her, dass die beiden Hunde Belka und Strelka, welche als erste lebende Wesen ins All geschossen wurden, wohlbehalten ihre Landekapsel verlassen.'
+    - 'Vor genau {2018} führte Greta Thunberg ihren Entschluss die Schule (und damit den Staat) im Namen des Klimaschutzes zu bestreiken. Daraus entwickelte sich die "Friday for Future" Bewegung.'
+08-21:
+    - 'Vor {1911} Jahren wurde die Mona Lisa während Renovierunsarbeiten aus dem Louvre geklaut'
+    - 'Carrie-Anne Moss, bekannt durch ihre Rolle in "Memento", wird heute {1967}. Zudem feiert Roy Frank "RJ" Mitte III heute seinen {1992}. Geburtstag. er wurde durch die Rolle des Sohnes Walter White, Opfer des US-Gesundheitssystems, bekannt. Und wo wir bei Bewegtbildern sind: Dirty Dancing hatte vor {1987} Premiere in den USA.'
+    - 'William Seward Burroughs erhielt vor {} Jahren das Patent auf das von ihm erfundene Modell einer Rechenmaschine. Die US-Patenummer lautet: 388.116.'
+08-22:
+    - 'Die Genfer Konvention wurde heute vor {1864} Jahren von den 12 Staaten Baden, Belgien, Dänemark, Frankreich, Hessen, Italien, die Niederlande, Portugal, Preußen, die Schweiz, Spanien und Württemberg untezeichnet. Und das THW feiert heute {1950} jähriges Grundungsjubliäum'
+    - 'GPS-Wochen können nur bis 1023 hochgezählt werden. Das führte heute vor {1999} Jahren dazu, dass diese wieder auf 0 zurück gesetzt wurde. Ähnlich wie beim Y2K-Problem lief das einfach.'
+    - 'Die Madonna und "Der Schrei" von Edward Munch wurden vor {2004} Jahren bei einem bewaffneten Raubüberfall gestohlen.'
+    - 'John Lee Hooker ({1917}) hat heute Geburtstag, genau wie Ray Bradbury ({1920}). Und Loriot weilt nun seit {2011} nicht mehr unter uns.'
+08-23:
+    - 'William Wallace (ja, Braveheart) wurde heute vor {1305} Jahren öffentlich durch Marter zu Tode gequält. 701 Jahre später (also vor {2006} Jahren) entkommt Natasha Kampus ihrem Entführer W. Přiklopil, der sie achteinhalb Jahre gefangen hielt.'
+    - 'Zehn Jahre nach der Übertragung des ersten Bild eines Mondaufangs über der Erde (geschossen von Lonar Orbiter 1) entdeckten Forscher Fußabdrücke von Dinosauriern die gut erhalten waren. Und zwar am Stausee Lac du Vieux Emosson im Kanton Wallis. Also, Mondaufgang vor {1966} Jahren, Dinospuren vor {1976} Jahren.'
+08-24:
+    - 'Vor {1995} Jahren wurde Windows 95 veröffentlicht. Und Steve Jobs trat genau vor {2011} Jahren als CEO von Apple zurück. Zufall?'
+    - 'Rupert Grinch, Eisverschenker, wird heute {1988} Jahre alt. Möge deinem Bus die Keilriemen erhalten bleiben.'
+    - 'Thomas Goletz zeichnete vor {1999} Jahren die erste Diddl-Maus'
 #1569: In Bad Harzburg wird das erste Salz gewonnen.
 #1853: Kartoffelchips werden zum ersten Mal zubereitet.
-#1995: Das Betriebssystem für Personalcomputer Windows 95 von Microsoft erscheint in den USA.
-#2011: Steve Jobs tritt vom Posten des CEO der Firma Apple zurück.
-#1990: Die Diddl-Maus wird von Thomas Goletz erstmals skizziert.
-#1988: *Rupert Grint, britischer Schauspieler
 
-08-25: ~
-#1609: Galileo Galilei präsentiert in Venedig erstmals sein nach holländischem Vorbild konstruiertes Fernrohr.
-#1991: Linus Torvalds gibt in einem Usenet-Posting an die dem Minix-System gewidmeten Newsgroup die Arbeit an einem freien Betriebssystem bekannt. Es entsteht Linux.
-#1987: *Blake Lively, US-amerikanische Schauspielerin und It-Girl
-#1970: *Claudia Schiffer, deutsches Fotomodell
-#1966: *Sandra Maischberger, deutsche Journalistin, Produzentin und Autorin
-#1819: +James Watt, britischer Erfinder aus Schottland, der die Dampfmaschine wesentlich verbesserte
-#1900: +Friedrich Nietzsche, deutscher Philosoph #2000: Jack Nitzsche, US-amerikanischer Pianist und Komponist
-#2000: +Carl Barks, US-amerikanischer Maler, Cartoonist und Texter
-#2012: +Neil Armstrong, US-amerikanischer Astronaut, erster Mensch auf dem Mond
-
-08-26: ~
-#55 v. Chr.: Julius Caesar führt seinen ersten Feldzug in Britannien.
-#1807: Das Königreich Bayern führt als weltweit erstes Land die Pflichtimpfung gegen Pocken ein.
-#1956: Mit Marilyn Monroe und Richard Widmark auf dem Titelblatt erscheint die erste Ausgabe des Jugendmagazins Bravo.
-#1910: *Mutter Teresa, albanische Ordensgründerin, Friedensnobelpreisträgerin
-#1980: *Macaulay Culkin, US-amerikanischer Schauspieler
-
-08-27: ~
-#1783: Der erste mit Wasserstoffgas gefüllte Ballon des Erbauers Jacques Alexandre César Charles steigt unbemannt vom Pariser Marsfeld auf und wird von Bauern bei der Landung als vermeintliches Teufelsgerät mit Mistgabeln zerstört.
+08-25:
+    - 'Erfindertag: Sein nach holländischem Vorbild konstruiertes Fernrohr präsentierte Galileo Galiei vor {1609} in Venedig. Und in der Newsgroup für das Mimix-System gibt Linus Torvalds bekannt an einem freiem Betriebssystem zu arbeiten.'
+    - 'Eine Runde Damengeburtstage: Wir gratulieren Blake Lively (Savages und Runaway Girl) zum {1987}, Claudia Schiffer zum {1966} und Sandra Maischberger zu, {1966}. Geburtstag. Lasst Krachen!'
+    - 'Nicht mehr unter uns weilen: James Watt, dem wir den Ausdruck "Macht doch, Watt Ihr Volt" verdanken, ({1819}), Fridrich Nietsche, der Gottes ableben feststellte ({1900}), Carl Barks, Zeichner antromopher Enten ({2000}) und auch Neil Amstrong seit {2012} Jahren, welcher nur kleine Schritte zu gehen vermochte. Und einen großen!'
+08-26:
+    - 'Julius Caesar führte heute vor {55} Jahren seinen ersten Feldzug gegen Britannien.'
+    - 'Es war noch ein Königreich, als vor {1807} Jahren Bayern als erstes Land die Impflicht gegen Pocken einführte. Als weltweit erste.'
+    - 'Vor {1956} Jahren teilten sich Marilyn Monroe und Richard Widmark das Titelblatt der ersten Bravo.'
+    - 'Sowohl Mutter Teresa als auch Macaulay Culkin feiern heute Geburtstag. Die Heilige wäre heute {1910} Jahre alt geworden, er wird heute {1980}'
+08-27:
+    - 'Als vor {1783} Jahren ein stolzer Trupp mutiger Bauern ein Werk des Teufels bekämpften, muss wie Jacques Alexandre César Charles Gesicht ein Interessanter Anblick gewesen sein. Immerhin war es seine Konstruktion eines mit Wasserstoff gefüllten Ballons, welche dort gerade von den Mistgabeln zerstört wurde.'
 #1912: Die erste Erzählung mit der von Edgar Rice Burroughs erdachten Figur Tarzan erscheint.
 #1955: Die gebundene Erstauflage des Buches The Guinness Book of Records liegt vor.
 #1824: In Leipzig wird Johann Christian Woyzeck, das historische Vorbild für Georg Büchners Drama Woyzeck, wegen des Mordes an Johanna Woost hingerichtet. Es handelt sich um die letzte öffentliche Hinrichtung innerhalb der Stadt Leipzig.
 #1985: *Daniel Küblböck, deutscher Sänger
 
-08-28: ~
-#1963: Über 200.000 schwarze und weiße Bürger beteiligen sich am Marsch auf Washington für Arbeit und Freiheit. Martin Luther King hält seine berühmte Rede „I Have a Dream“.
+08-28:
+    - 'Es kam: Johann Wolfgang von Goethe vor {1749} Jahren. Es ging: Michael Ende vor {1995} Jahren. Überlasse ich euch: Faust oder Momo.'
+    - 'Vor {1955} Jahren wurde der 14-jährige Emmet Till ermordet, weil er als schwarzer einer Frau hinterhergepfiffen hat. Die Täter Roy Bryant und J.W. Millam werden freigesprochen, was zu Massenprotesten führt, welche als der Beginn der US-amerikanischen Bürgerrechtsbewegung gelten. Acht Jahre später, also vor {1963} Jahren hält  Martin Luther King hielt seine Rede "I have a Dream" während über 200.000 Bürger sich am March auf Washington für Arbeit und Freiheit bewegen.'
 #1789: Wilhelm Herschel entdeckt den Saturn-Mond Enceladus.
-#1955: Der 14-jährige Schwarze Emmett Till wird von Roy Bryant und J.W. Millam misshandelt und ermordet, weil er einer weißen Frau nachgepfiffen haben soll. Der spätere Freispruch der Täter führt zu Massenprotesten, die als der Beginn der US-amerikanischen Bürgerrechtsbewegung gelten.
 #1996: Die Ehe von Prinz Charles und Diana von Wales wird geschieden.
-#1749: *Johann Wolfgang von Goethe, deutscher Dichter
-#1995: +Michael Ende, deutscher Schriftsteller
 
-08-29: ~
-#1751: Im Keller des Heidelberger Schlosses wird das größte Weinfass der Welt fertiggestellt. Es kann 221.726 Liter Wein aufnehmen.
-#1997: Das US-amerikanische Filmwirtschaft-Unternehmen Netflix wird gegründet.
+08-29:
+    - 'Das größte Weinfass der Welt fasst 221.726 Liter Wein. Und es wurde vor {1751} Jahren fertig gestellt.'
+    - 'Netflix feiert Firmenjubiläum, zum {1997}. Mal. Und seit {1951} Jahren gibt es in Deutschland jetzt Micky Maus Comics.'
 #1893: Der US-amerikanische Tüftler Whitcomb Judson erhält ein Patent auf den von ihm erfundenen Reißverschluss.
-#1951: Der erste Micky Maus-Comic erscheint in Deutschland.
 #1958: *Michael Jackson, US-amerikanischer Musiker
-08-30: ~
-#1965: Bob Dylan bringt sein sechstes Studioalbum Highway 61 Revisited heraus, das den Song Like A Rolling Stone enthält.
-#1972: *Cameron Diaz, US-amerikanische Schauspielerin
-08-31: ~
+08-30:
+    - '"Like a Rolling Stone" von Bob Dylan erschien vor {1965} Jahren auf dem Album "Highway 61 Revisited".'
+    - 'Cameron Diaz, welche ihre erste Rolle in "Die Maske" hatte, wird heute {1972}.'
+08-31:
 #1888: Im Londoner Viertel Whitechapel wird die verstümmelte Leiche von Mary Ann Nichols aufgefunden. Sie gilt später als erstes Opfer des Serienmörders Jack the Ripper.
 #1997: Lady Di verunglückt kurz nach Mitternacht bei einem Autounfall in einem Tunnel in Paris zusammen mit ihrem Lebensgefährten Dodi Fayed. Am selben Tag sterben beide an ihren Verletzungen.
 #2006: Die norwegische Polizei kann bei einer Razzia die beiden im Jahr 2004 aus dem Munch-Museum gestohlenen Gemälde Der Schrei und Madonna des Malers Edvard Munch sicherstellen.

@@ -57,4 +57,17 @@ class Whhato
 
         return $buffer;
     }
+
+    public function getMessagesInRowFor(\DateTimeInterface $date): int
+    {
+        $bufferDate = \DateTime::createFromFormat(\DATE_ATOM, ($date->format(\DATE_ATOM)));
+        for ($inRow = 0; $inRow < 366; ++$inRow) {
+            if (!$this->hasDateMessage($bufferDate)) {
+                return $inRow;
+            }
+            $bufferDate->add(new \DateInterval('P1D'));
+        }
+
+        return $inRow;
+    }
 }

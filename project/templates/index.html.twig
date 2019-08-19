@@ -9,6 +9,8 @@
         {% endfor %}
     </ul>
 
+    <p>Messages in a row: {{ whhato.MessagesInRowFor(date()) }}</p>
+
     <p><a href="{{ path('overview') }}">All available messages</a></p>
 
     <a href="{{ path('connect_slack_start') }}">Install for Slack</a>

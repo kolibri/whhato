@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class WhhatoControllerTest extends WebTestCase
 {
-    public function testIndexPageWorks()
+    public function testIndexPageWorks(): void
     {
         $client = static::createClient();
         $crawler = $client->request('GET', '/');
@@ -16,7 +16,7 @@ class WhhatoControllerTest extends WebTestCase
         static::assertGreaterThan(0, $crawler->filter('h1')->count());
     }
 
-    public function testOverviewWorks()
+    public function testOverviewWorks(): void
     {
         $client = static::createClient();
         $crawler = $client->request('GET', '/overview');
@@ -28,7 +28,7 @@ class WhhatoControllerTest extends WebTestCase
     public function testWhatHappenedTodayActionWithoutGivenDate(): void
     {
         $client = static::createClient();
-        $client->request('GET', '/whhato');
+        $client->request('POST', '/whhato');
         static::assertTrue($client->getResponse()->isSuccessful());
         static::assertSame(
             sprintf(
@@ -42,7 +42,7 @@ class WhhatoControllerTest extends WebTestCase
     public function testWhatHappenedTodayActionWithGivenDate(): void
     {
         $client = static::createClient();
-        $client->request('GET', '/whhato/25-01-2015');
+        $client->request('POST', '/whhato/25-01-2015');
         static::assertTrue($client->getResponse()->isSuccessful());
         static::assertSame('{"text":"Its been 38 years since this day in 1977","response_type":"in_channel"}',
             $client->getResponse()->getContent()
@@ -52,11 +52,11 @@ class WhhatoControllerTest extends WebTestCase
     public function testWhatHappenedTodayActionWithWrongDateFormatGivesNotFound(): void
     {
         $client = static::createClient();
-        $client->request('GET', '/whhato/foobar');
+        $client->request('POST', '/whhato/foobar');
         static::assertTrue($client->getResponse()->isNotFound());
     }
 
-    public function testProdReturnsSomething()
+    public function testProdReturnsSomething(): void
     {
         $client = static::createClient(['environment' => 'prod', 'debug' => false]);
         $client->request('GET', '/whhato');

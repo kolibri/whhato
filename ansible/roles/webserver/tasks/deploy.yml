@@ -41,6 +41,11 @@
     path: '{{ deploy_helper.new_release_path }}/{{ deploy_helper.unfinished_filename }}'
     state: touch
 
+- name: remove prod cache (HARDCORE!)
+  file:
+    dest: "{{ deploy_helper.new_release_path }}/var/cache/prod"
+    state: absent
+
 - name: Finalize the deploy, removing the unfinished file and switching the symlink
   deploy_helper:
     path: "{{ project_path }}"

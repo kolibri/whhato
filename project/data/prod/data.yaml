@@ -134,7 +134,8 @@
 05-11: ~
 05-12: ~
 05-13: ~
-05-14: ~
+05-14:
+    - 'Alice Seeley Harris schoss vor {1904} das Foto "Nsala of Wala in the Nsongo District (Abir Concession)". Hinweis: Bevor Ihr eurer Neugier folgt und den Titel bei Google eingebt, macht euch bewusst, dass ich sonst kein Problem mit Grausamkeiten habe. Das ist hier anders.'
 05-15: ~
 05-16: ~
 05-17: ~
@@ -280,93 +281,486 @@
 08-09:
     - 'Die hochschwangere Schauspielerin Sharon Tate sowie drei ihrer Freunde und ein Bekannter von Angehörigen der Manson Family wurden vor {1943} Jahren in Los Angeles ermordet.'
     - 'Vor {1985} Jahren kam die US-amerikanische Schauspielerin Anna Kendrick zur Welt.' 
+    - "Vor {1173} Jahren wurde der Grundstein für den Campanile gelegt. Dieser Turm neben dem Dom von Pisa wird später einmal als 'Der Schiefe Turm von Pisa' bekannt werden."
+    - "Whitney Houston hätte heute ihren {1963}. Geburtstag gefeiert."
 08-10: ~
 08-11: ~
 08-12: ~
-08-13: ~
-08-14: ~
-08-15: ~
-08-16: ~
-08-17: ~
+08-13:
+    - 'Moritz Bleibtreu wird heute {1971}'
+#1948: Österreich wird Mitglied in der UNESCO.
+#1999: Die bereits seit 1868 in Gebrauch befindliche Sonnenscheibenflagge wird formell als Nationalflagge Japans eingeführt.
+# 1913: Harry Brearley gelingt die Erfindung rostfreien Stahls.
+#3114 v. Chr.: Nach der Thompson-Korrelation von Sir J. Eric S. Thompson beginnt die Lange Zählung des Maya-Kalenders mit dem Datum 0.0.0.0.0.
+#1942: Walt Disneys Trickfilm Bambi hat US-Premiere in der Radio City Music Hall in New York.
+#2004: Das Computerspiel Doom 3 von id Software wird, für Microsoft Windows, in Europa veröffentlicht. Im Gegensatz zu seinen beiden Vorgängerspielen landet es in Deutschland nicht auf dem Index der BpjM.
+#1996: Der Belgier Marc Dutroux und zwei Komplizen werden wegen Verdachts auf Entführung von Sabine Dardenne und Laetitia Delhez verhaftet. Bei den weiteren polizeilichen Ermittlungen werden mehrere Kindesentführungen zum Zweck sexuellen Missbrauchs der Opfer und Ermordungen aufgedeckt.
+#Alfred Hitchcock     (* 1899)
+#1926: *Fidel Castro, kubanischer Revolutionär, Regierungschef und Präsident mit diktatorischem Führungsanspruch
+#1971: *Heike Makatsch, deutsche Schauspielerin
+#2009: +Les Paul, US-amerikanischer Gitarrist
+
+08-14:
+    - 'Vor {1949} Jahre wurde der erste Deutschte Bundestag gewählt. Stärkste Fraktion: CDU/CSU.'
+    - 'Der Film "The Rocky Horror Picture Show" feierte vor {1975} Jahren Premiere in London.'
+    - 'Heute vor {1892} Jahren begann in Hamburg eine Cholera-Epidemie. Unfiltriertes Trinkwasser aus der Elbe und unhygienische Zustände im Armutsviertel begünstigen die Ausbreitung des Bazillus. Über 8.600 Menschen kommen in den folgenden Wochen ums Leben.'
+    - 'Heute haben Geburtstag: Halle Berry ({1966}), Sarah Brightman ({1960}) und Rezo, der alte Zerstörer ({1992}).'
+    - 'Gedenken wir heute Maximilian Kolbe, der heute vor {1941} Jahrenn verstarb, sowie Berthold Brecht (vor {1956} Jahre).'
+    #1984: IBM stellt den IBM Personal Computer/AT vor. Seine Technik ist als AT-Format über mehr als ein Jahrzehnt Standard in diesem Marktsegment.
+
+08-15:
+    - 'Seit {1795} Jahren kann (und soll) man in Frankreich mit dem Franc bezahlen, und nicht mehr mit dem Livre.'
+    - '{1992} Jahre ist es jetzt her, dass Nintendo die Videospielkonsole SNES auch in Deutschland veröffentlicht wird.'
+    - '{1977} zuvor: Der Astrophysiker Jerry R. Ehman empfängt mit dem "Big Ear"-Radioteleskop ein Schmalband-Radiosignal aus dem Sternbild Schütze. Es soll als potentielle Nachricht von Aliens unter dem Namen "Wow-Signal" berühmt werden.'
+    - 'Mit 55.600 Besuchern stellen die Beatles ihren eigenen Besucherrekord auf. Das passierte vor {1965} Jahren im New Yorker Shea Stadium.'
+    - 'Auch interessant: Napoleon Bonaparte und Ben Affleck haben beide heute Geburtstag. Sie werden {1769} und {1972}'
+
+08-16:
+    - 'Ian Murdock hat heute vor {1993} das Debian Projekt ins Leben gerufen. Danke dafür!'
+    - 'Ginger Alden fand heute vor {1977} Jahren ihren Verlobten Elvis Presley tot in seinem Zimmer auf Graceland.'
+    - 'Ted Bundy erlebte vor exakt {1975} Jahren seine erste von drei Verhaftung.'
+    - 'Es ist unklar, ob Madonna ihren Geburtstag noch feiert. Sicher, sie wird heute stolze {1958} Jahre alt, aber seit {2018} Jahren wirft der Tod von Aretha Franklin ebenfalls seinen Schatten auf diesen Tag.'
+#1962: *Steve Carell, US-amerikanischer Schauspieler und Comedian
+#1899: +Robert Wilhelm Bunsen, deutscher Chemiker (Spektralanalyse, Bunsenbrenner, Bunsenelement und Bunsen-Fotometer)
+08-17:
+    - 'Gratulation an die Schweizer, welche so klug waren und schon seit {1835} Jahren das metrische System nutzen.'
+    - 'George Orwells Meisterwerk "Animal Farm" wurde heute vor {1945} Jahren in Großbritannien veröffentlicht.'
+    - 'Bridget Driscoll wurde vor {1896} unfreiwillig als erstes Todesopfer eines Autounfalls teil der Geschichte'
+    - 'Happy Birthday, Roberr De Niro! Alles gute zum {1943}.'
+#1982: Die Plattenfirma Polygram stellt die ersten Audio-CDs vor: Walzer von Frédéric Chopin, gespielt von Claudio Arrau, sowie das Album The Visitors der Musikgruppe ABBA.
+#1908: Der erste bekannte Zeichentrickfilm Fantasmagorie, geschaffen von Émile Cohl, wird in Paris uraufgeführt.
+#1960: The Beatles geben im Hamburger Rotlichtviertel St. Pauli ihr erstes Konzert unter diesem Namen.
+#1979: Die Uraufführung des Spielfilms Monty Python’s Life of Brian (Das Leben des Brian) der britischen Komikertruppe Monty Python führt zu Protesten christlicher und jüdischer Gruppierungen, die eine Verhöhnung ihrer religiösem Gefühle wahrnehmen. In der Folge kommt es zu Aufführungsboykotten und -verboten in mehreren Ländern.
+#2012: Wegen „Rowdytums aus religiösem Hass“ werden drei Mitglieder der Punk-Band Pussy Riot vor einem Moskauer Gericht zu Haftstrafen verurteilt.
+
 08-18: ~
-08-19: ~
-08-20: ~
-08-21: ~
-08-22: ~
-08-23: ~
-08-24: ~
-08-25: ~
-08-26: ~
-08-27: ~
-08-28: ~
-08-29: ~
-08-30: ~
-08-31: ~
+#1888: Der Centralbahnhof, der heutige Hauptbahnhof, wird in Frankfurt am Main eingeweiht.
+#1960: In den USA werden unter dem Markennamen Enovid die ersten Antibabypillen angeboten.
+#1930: In einem Micky-Maus-Trickfilm der Disney Company tritt zum ersten Mal der Hund Pluto auf. Er ist als Bluthund dem ausgebrochenen Sträfling Micky auf der Spur.
+#1952: *Patrick Swayze, US-amerikanischer Schauspieler
+#1957: *Harald Schmidt, deutscher Schauspieler, Kabarettist und Moderator
+#Christian Michael Leonard Slater (* 18. August 1969 in New York City) ist ein US-amerikanischer Schauspieler und Fernsehproduzent.
+#1969: *Edward Norton, US-amerikanischer Schauspieler und Regisseur
+#1227: +Dschingis Khan, hochmittelalterlicher Khan der Mongolen
+#2018: +Kofi Annan, ghanaischer Diplomat, UN-Generalsekretär, Nobelpreisträger
+
+08-19:
+    - 'Bill Clinton wird heute {1946} Jahre alt.'
+#1992: Bei der „Aktion Standesamt“ beantragen bundesweit 250 gleichgeschlechtliche Paare bei Standesämtern das Aufgebot zur Eheschließung, um damit auf die rechtlose Situation gleichgeschlechtlicher Paare in Deutschland aufmerksam zu machen und die Diskussion über die „Homo-Ehe“ in Gang zu setzen.
+#1952:* Jonathan Frakes, US-amerikanischer Schauspieler und Regisseur
+08-20:
+    - '{1960} Jahre ist es nun her, dass die beiden Hunde Belka und Strelka, welche als erste lebende Wesen ins All geschossen wurden, wohlbehalten ihre Landekapsel verlassen.'
+    - 'Vor genau {2018} führte Greta Thunberg ihren Entschluss die Schule (und damit den Staat) im Namen des Klimaschutzes zu bestreiken. Daraus entwickelte sich die "Friday for Future" Bewegung.'
+08-21:
+    - 'Vor {1911} Jahren wurde die Mona Lisa während Renovierunsarbeiten aus dem Louvre geklaut'
+    - 'Carrie-Anne Moss, bekannt durch ihre Rolle in "Memento", wird heute {1967}. Zudem feiert Roy Frank "RJ" Mitte III heute seinen {1992}. Geburtstag. er wurde durch die Rolle des Sohnes Walter White, Opfer des US-Gesundheitssystems, bekannt. Und wo wir bei Bewegtbildern sind: Dirty Dancing hatte vor {1987} Premiere in den USA.'
+    - 'William Seward Burroughs erhielt vor {} Jahren das Patent auf das von ihm erfundene Modell einer Rechenmaschine. Die US-Patenummer lautet: 388.116.'
+08-22:
+    - 'Die Genfer Konvention wurde heute vor {1864} Jahren von den 12 Staaten Baden, Belgien, Dänemark, Frankreich, Hessen, Italien, die Niederlande, Portugal, Preußen, die Schweiz, Spanien und Württemberg untezeichnet. Und das THW feiert heute {1950} jähriges Grundungsjubliäum'
+    - 'GPS-Wochen können nur bis 1023 hochgezählt werden. Das führte heute vor {1999} Jahren dazu, dass diese wieder auf 0 zurück gesetzt wurde. Ähnlich wie beim Y2K-Problem lief das einfach.'
+    - 'Die Madonna und "Der Schrei" von Edward Munch wurden vor {2004} Jahren bei einem bewaffneten Raubüberfall gestohlen.'
+    - 'John Lee Hooker ({1917}) hat heute Geburtstag, genau wie Ray Bradbury ({1920}). Und Loriot weilt nun seit {2011} nicht mehr unter uns.'
+08-23:
+    - 'William Wallace (ja, Braveheart) wurde heute vor {1305} Jahren öffentlich durch Marter zu Tode gequält. 701 Jahre später (also vor {2006} Jahren) entkommt Natasha Kampus ihrem Entführer W. Přiklopil, der sie achteinhalb Jahre gefangen hielt.'
+    - 'Zehn Jahre nach der Übertragung des ersten Bild eines Mondaufangs über der Erde (geschossen von Lonar Orbiter 1) entdeckten Forscher Fußabdrücke von Dinosauriern die gut erhalten waren. Und zwar am Stausee Lac du Vieux Emosson im Kanton Wallis. Also, Mondaufgang vor {1966} Jahren, Dinospuren vor {1976} Jahren.'
+08-24:
+    - 'Vor {1995} Jahren wurde Windows 95 veröffentlicht. Und Steve Jobs trat genau vor {2011} Jahren als CEO von Apple zurück. Zufall?'
+    - 'Rupert Grinch, Eisverschenker, wird heute {1988} Jahre alt. Möge deinem Bus die Keilriemen erhalten bleiben.'
+    - 'Thomas Goletz zeichnete vor {1999} Jahren die erste Diddl-Maus'
+#1569: In Bad Harzburg wird das erste Salz gewonnen.
+#1853: Kartoffelchips werden zum ersten Mal zubereitet.
+
+08-25:
+    - 'Erfindertag: Sein nach holländischem Vorbild konstruiertes Fernrohr präsentierte Galileo Galiei vor {1609} in Venedig. Und in der Newsgroup für das Mimix-System gibt Linus Torvalds bekannt an einem freiem Betriebssystem zu arbeiten.'
+    - 'Eine Runde Damengeburtstage: Wir gratulieren Blake Lively (Savages und Runaway Girl) zum {1987}, Claudia Schiffer zum {1966} und Sandra Maischberger zu, {1966}. Geburtstag. Lasst Krachen!'
+    - 'Nicht mehr unter uns weilen: James Watt, dem wir den Ausdruck "Macht doch, Watt Ihr Volt" verdanken, ({1819}), Fridrich Nietsche, der Gottes ableben feststellte ({1900}), Carl Barks, Zeichner antromopher Enten ({2000}) und auch Neil Amstrong seit {2012} Jahren, welcher nur kleine Schritte zu gehen vermochte. Und einen großen!'
+08-26:
+    - 'Julius Caesar führte heute vor {55} Jahren seinen ersten Feldzug gegen Britannien.'
+    - 'Es war noch ein Königreich, als vor {1807} Jahren Bayern als erstes Land die Impflicht gegen Pocken einführte. Als weltweit erste.'
+    - 'Vor {1956} Jahren teilten sich Marilyn Monroe und Richard Widmark das Titelblatt der ersten Bravo.'
+    - 'Sowohl Mutter Teresa als auch Macaulay Culkin feiern heute Geburtstag. Die Heilige wäre heute {1910} Jahre alt geworden, er wird heute {1980}'
+08-27:
+    - 'Als vor {1783} Jahren ein stolzer Trupp mutiger Bauern ein Werk des Teufels bekämpften, muss wie Jacques Alexandre César Charles Gesicht ein Interessanter Anblick gewesen sein. Immerhin war es seine Konstruktion eines mit Wasserstoff gefüllten Ballons, welche dort gerade von den Mistgabeln zerstört wurde.'
+#1912: Die erste Erzählung mit der von Edgar Rice Burroughs erdachten Figur Tarzan erscheint.
+#1955: Die gebundene Erstauflage des Buches The Guinness Book of Records liegt vor.
+#1824: In Leipzig wird Johann Christian Woyzeck, das historische Vorbild für Georg Büchners Drama Woyzeck, wegen des Mordes an Johanna Woost hingerichtet. Es handelt sich um die letzte öffentliche Hinrichtung innerhalb der Stadt Leipzig.
+#1985: *Daniel Küblböck, deutscher Sänger
+
+08-28:
+    - 'Es kam: Johann Wolfgang von Goethe vor {1749} Jahren. Es ging: Michael Ende vor {1995} Jahren. Überlasse ich euch: Faust oder Momo.'
+    - 'Vor {1955} Jahren wurde der 14-jährige Emmet Till ermordet, weil er als schwarzer einer Frau hinterhergepfiffen hat. Die Täter Roy Bryant und J.W. Millam werden freigesprochen, was zu Massenprotesten führt, welche als der Beginn der US-amerikanischen Bürgerrechtsbewegung gelten. Acht Jahre später, also vor {1963} Jahren hält  Martin Luther King hielt seine Rede "I have a Dream" während über 200.000 Bürger sich am March auf Washington für Arbeit und Freiheit bewegen.'
+#1789: Wilhelm Herschel entdeckt den Saturn-Mond Enceladus.
+#1996: Die Ehe von Prinz Charles und Diana von Wales wird geschieden.
+
+08-29:
+    - 'Das größte Weinfass der Welt fasst 221.726 Liter Wein. Und es wurde vor {1751} Jahren fertig gestellt.'
+    - 'Netflix feiert Firmenjubiläum, zum {1997}. Mal. Und seit {1951} Jahren gibt es in Deutschland jetzt Micky Maus Comics.'
+#1893: Der US-amerikanische Tüftler Whitcomb Judson erhält ein Patent auf den von ihm erfundenen Reißverschluss.
+#1958: *Michael Jackson, US-amerikanischer Musiker
+08-30:
+    - '"Like a Rolling Stone" von Bob Dylan erschien vor {1965} Jahren auf dem Album "Highway 61 Revisited".'
+    - 'Cameron Diaz, welche ihre erste Rolle in "Die Maske" hatte, wird heute {1972}.'
+08-31:
+#1888: Im Londoner Viertel Whitechapel wird die verstümmelte Leiche von Mary Ann Nichols aufgefunden. Sie gilt später als erstes Opfer des Serienmörders Jack the Ripper.
+#1997: Lady Di verunglückt kurz nach Mitternacht bei einem Autounfall in einem Tunnel in Paris zusammen mit ihrem Lebensgefährten Dodi Fayed. Am selben Tag sterben beide an ihren Verletzungen.
+#2006: Die norwegische Polizei kann bei einer Razzia die beiden im Jahr 2004 aus dem Munch-Museum gestohlenen Gemälde Der Schrei und Madonna des Malers Edvard Munch sicherstellen.
 09-01: ~
+#1985: Das Wrack des Luxusliners Titanic, der am 15. April 1912 auf der Jungfernfahrt von Southampton nach New York, (NY) gesunken war, wird am Meeresboden, in fast 4000 Metern Tiefe, vor Neufundland von Robert Ballard entdeckt.
+#1914: „Martha“, das letzte lebende Exemplar der Wandertaube, stirbt im Zoo von Cincinnati.
+#1902: Im Pariser Olympia kann das Kinopublikum den ersten Science-Fiction-Film erleben. Der Streifen Die Reise zum Mond von Regisseur Georges Méliès wird ein großer Erfolg.
+#1989: *Bill Kaulitz, deutscher Sänger (Tokio Hotel)
+#1989: *Tom Kaulitz, deutscher Musiker (Tokio Hotel)
+
 09-02: ~
+#1964: *Keanu Reeves, kanadischer Schauspieler
+#1966: *Salma Hayek, mexikanische Schauspielerin
+#1973: +J. R. R. Tolkien, britischer Schriftsteller
+
 09-03: ~
+#1967: Schweden stellt am Dagen H endgültig von Links- auf Rechtsverkehr um.
+#1999: Die Quizsendung Wer wird Millionär? mit Günther Jauch als Moderator startet auf RTL.
+#1829: *Adolf Fick, deutscher Physiologe
 09-04: ~
+#1885: In New York City wird eine Cafeteria als weltweit erstes Selbstbedienungsrestaurant geöffnet.
+#1888: George Eastman lässt die Handelsmarke Kodak registrieren und erhält ein Patent für eine Rollfilm-Kamera, die Kodak Nr. 1.
+#1949: Herta Heuwer erfindet in Berlin die Currywurst mit der Chillup-Sauce.
+#1965: In Deutschland wird von der ARD erstmals die Fernsehziehung der Lottozahlen ausgestrahlt.
+#1998: Gründung von Google Inc., ein US-amerikanisches Internet Unternehmen
+#1952: Ernest Hemingways Roman Der alte Mann und das Meer erscheint in den U.S.A.
+#1981: *Beyoncé Knowles, US-amerikanische Sängerin und Schauspielerin
 09-05: ~
+#2001: Mit mehr als einjähriger Verspätung beginnt die Aufführung des Musikstücks As slow as possible von John Cage in Halberstadt mit einer Gesamtspieldauer von 639 Jahren.
+#1946: *Freddie Mercury, britischer Rocksänger
+#1951: *Michael Keaton, US-amerikanischer Schauspieler
+#1997: +Mutter Teresa, Gründerin des Ordens Missionarinnen der Nächstenliebe, Nobelpreisträgerin
+
 09-06: ~
+#2007: Der Graupapagei Alex stirbt. Er konnte Objekte nach verschiedenen Eigenschaften sortieren und bis 6 zählen.
+#1780: Johann Wolfgang von Goethe schreibt mit Bleistift an die Holzwand einer Jagdhütte auf dem Kickelhahn bei Ilmenau in Thüringen Wandrers Nachtlied – Ein Gleiches.
+#1970: Am letzten Tag des Love-and-Peace-Festivals auf der Ostseeinsel Fehmarn gibt Jimi Hendrix sein letztes offizielles Konzert vor seinem Tod und Ton Steine Scherben als Rote Steine ihr erstes.
 09-07: ~
+#1949: Die Deutsche Bundespost gibt ihre erste Briefmarke heraus. Thema: „Eröffnung des ersten Deutschen Bundestages“.
+#1996: Auf den Rapper Tupac Shakur wird in Las Vegas ein Attentat in seinem Auto verübt. Am 13. September stirbt er an seinen Verletzungen.
 09-08: ~
+#1961: Unter dem Titel Unternehmen Stardust erscheint Heft 1 der Science-Fiction-Serie Perry Rhodan.
+#1966: Die erste Folge der Fernsehserie Star Trek wird in den USA ausgestrahlt.
+#1504: Michelangelo präsentiert auf der Piazza della Signoria in Florenz die legendäre, über 4 m hohe David-Statue.
+#1888: Annie Chapman, das zweite Opfer Jack the Rippers, wird in Whitechapel, London, gefunden.
+#1979: Pink, US-amerikanische Sängerin
 09-09: ~
+#1976: Das ZDF beginnt mit der Ausstrahlung der Zeichentrickserie Die Biene Maja.
+#1893: Im Weißen Haus in Washington, D.C. findet die bislang einzige Geburt eines Babys statt. US-Präsident Grover Cleveland und seine Frau Frances freuen sich über ihre zweite Tochter Esther.
+#2009: Mit Hajime Isayamas Attack on Titan startet eine der einflussreichsten Mangareihen in der ersten Ausgabe des Bessatsu Shōnen Magazine.
+#1901: Henri de Toulouse-Lautrec, französischer Maler
 09-10: ~
+#2002: Die Schweiz wird offizielles Mitglied der Vereinten Nationen.
+#2006: Die Piratenpartei Deutschland wird in Berlin gegründet.
+#1991: Nirvana veröffentlicht mit Smells Like Teen Spirit die erste Singleauskopplung aus dem Album Nevermind. Der Song wird zur Hymne einer Generation und begründet den Siegeszug des Grunge.
+#1993: Die erste Episode der Fernsehserie Akte X – Die unheimlichen Fälle des FBI mit David Duchovny und Gillian Anderson in den Hauptrollen wird in den USA ausgestrahlt.
+#1993: Die Single Schrei nach Liebe der wiedergegründeten Berliner Punkrockband Die Ärzte erscheint.
+#1933: *Karl Lagerfeld, deutscher Modeschöpfer
+#1960: *Colin Firth, britischer Schauspieler
 09-11: ~
+#1990: US-Präsident George H. W. Bush hält eine Rede, in der er zum ersten Mal vor großem Publikum über die „neue Weltordnung“ (new world order) spricht.
+#1912: In Berlin wird die Diesel-Sulzer-Klose-Thermolokomotive für die Preußischen Staatseisenbahnen fertiggestellt, die weltweit erste Diesellokomotive.
+#1962: The Beatles nehmen ihre erste Single Love Me Do auf.
 09-12: ~
+#1981: Der Chaos Computer Club wird in Berlin gegründet.
+#1931: *Ian Holm, britischer Schauspieler
+#1951: *Joe Pantoliano, US-amerikanischer Schauspieler
+#1957: *Hans Zimmer, deutscher Komponist
+#1986: *Emmy Rossum, US-amerikanische Sängerin und Schauspielerin
+#2018: +Rachid Taha, algerischer Sänger und Musiker
+
 09-13: ~
+#1985: In Japan erscheint das Videospiel Super Mario Bros. der japanischen Firma Nintendo.
+#1991: Die erste Episode der US-Zeichentrickserie Die Simpsons wird in Deutschland ausgestrahlt.
 09-14: ~
+#2007: Die SCO Group teilt ihre Insolvenz nach dem verlorenen Rechtsstreit über die Besitzansprüche am Quellcode von Linux mit.
+#1956: IBM stellt mit dem IBM 305 RAMAC den ersten Computer mit einem Festplattenlaufwerk vor.
+#1990: Offizieller Start des weltweiten Human Genome Projects.
+#1947: *Sam Neill, neuseeländischer Schauspieler
+#1983: *Amy Winehouse, britische Soul-Sängerin
+
 09-15: ~
+#1997: Die von Larry Page und Sergey Brin an der Stanford University entwickelte Suchmaschine Google geht online.
+#1995: In Tokio einigen sich führende Elektronikhersteller auf einen gemeinsamen technischen Standard für DVDs.
+#1946: Tommy Lee Jones, US-amerikanischer Schauspieler
 09-16: ~
+#1978: Die Dreharbeiten zu Das Leben des Brian von Monty Python beginnen.
+#1952: *Mickey Rourke, US-amerikanischer Filmschauspieler
+#1956: *David Copperfield, US-amerikanischer Magier
 09-17: ~
+#1991: Linus Torvalds veröffentlicht die erste Version von Linux (Version 0.01) auf einem öffentlichen FTP-Server und schafft damit die Grundlage zur weltweiten Entwicklung dieses neuen Open-Source-Betriebssystems.
+#1980: Die Urversion des Musicals Les Misérables von Claude-Michel Schönberg und Alain Boublil nach dem gleichnamigen Roman von Victor Hugo wird in Paris uraufgeführt.
+#1981: In München wird der Film Das Boot nach Lothar-Günther Buchheims gleichnamigem Roman uraufgeführt.
+#1944: *Reinhold Messner, italienischer Bergsteiger
+
 09-18: ~
+#1895: Daniel David Palmer betätigt sich als erster Chiropraktiker. Er korrigiert einen verschobenen Wirbel eines Patienten, was Letzterem seine Hörfähigkeit zurückgibt.
+#1997: Eine neue Unterart der Quastenflosser, der Manado-Quastenflosser, wird von Arnaz Mehta Erdmann im Norden von Sulawesi entdeckt.
+#1952: Charlie Chaplin verlässt die USA zu einer Europareise und darf auf Betreiben J. Edgar Hoovers nicht wieder einreisen.
+#1709: Samuel Johnson, britischer Gelehrter, Lexikograf, Schriftsteller, Dichter und Kritiker
+#1819: Léon Foucault, französischer Physiker, Optiker und Erfinder des Foucaultschen Pendels
+#1942: Wolfgang Schäuble, deutscher Verwaltungsjurist und Politiker, MdB, mehrfacher Bundesminister
+#1970: +Jimi Hendrix, US-amerikanischer Gitarrist und Sänger
+
 09-19: ~
+#1982: Der Informatiker Scott E. Fahlman schlägt vor, für Scherze im E-Mail-Verkehr die aus drei ASCII-Zeichen gebildete Zeichenfolge :-) zu verwenden. Die ein Smiley nachbildenden Emoticons verbreiten sich bald über das Arpanet.
+#1991: In den Ötztaler Alpen wird die Gletschermumie Ötzi gefunden.
+#1996: Der Science-Fiction-Film Independence Day von Roland Emmerich läuft in den deutschen Kinos an.
 09-20: ~
+#1958: Tommy Steele wird als erster Rock ’n’ Roll-Musiker als Wachsfigur im Museum von Marie Tussaud in London ausgestellt.
+#1973: Die Telefonnummern 110 und 112 werden deutschlandweit als Notrufnummern eingeführt.
 09-21: ~
+#1869: Die Dresdner Semper-Oper wird bei einem verheerenden Brand vernichtet.
+#1947: Stephen King, US-amerikanischer Schriftsteller
+#1950: Bill Murray, US-amerikanischer Schauspieler, Regisseur, Komödiant und Produzent
+#1983: Maggie Grace, US-amerikanische Schauspielerin Maggie Grace, eigentlich Margaret Grace Denig, (* 21. September 1983 in Worthington, Ohio) ist eine US-amerikanische Schauspielerin, die als Shannon Rutherford in der Fernsehserie Lost bekannt wurde.
 09-22: ~
+#2002: Bei den Wahlen zum 15. Deutschen Bundestag erreicht die Sozialdemokratische Partei Deutschlands unter Gerhard Schröder einen knappen Wahlsieg.
+#2013: Bei den Wahlen zum 18. Deutschen Bundestag erreicht die CDU/CSU unter Kanzlerin Angela Merkel die meisten Stimmen und verfehlt bei den Sitzen nur knapp die absolute Mehrheit. Die FDP scheitert zum ersten Mal überhaupt an der Fünf-Prozent-Hürde.
+#1986: In den USA wird die erste Folge der Fantasy-Sitcom ALF ausgestrahlt.
 09-23: ~
+#2002: Die erste Version des Webbrowsers Mozilla Firefox wird, unter dem vorläufigen Namen Phoenix, weltweit veröffentlicht.
+#1980: Bob Marley tritt in Pittsburgh, Pennsylvania, zum letzten Mal auf.
+#1983: In Berlin wird die deutsche AIDS-Hilfe e. V. (DAH) gegründet.
+#1938: *Romy Schneider, deutsch-französische Schauspielerin
+#1943: *Julio Iglesias, spanischer Sänger
+#
 09-24: ~
+#1948: Das Unternehmen Honda wird gegründet.
+#2017: Bei der 19. Wahl zum deutschen Bundestag gelangt erstmals die Alternative für Deutschland (AfD) in den deutschen Bundestag.
+#1940: In Berlin kommt in 66 Kinos der antisemitische Propagandaspielfilm Jud Süß des Regisseurs Veit Harlan zur Erstaufführung.
+#1991: Das Album Nevermind von Nirvana erscheint in den USA und wird ein Meilenstein der Musikgeschichte.
+#1959: Günter Grass veröffentlicht seinen Roman Die Blechtrommel.
+#
+
 09-25: ~
+# 1944: *Michael Douglas, US-amerikanischer Schauspieler
+#1968: *Will Smith, US-amerikanischer Schauspieler und Rapper
+#1969: *Catherine Zeta-Jones, britische Schauspielerin
+#1982: *Casper, deutscher Rapper
 09-26: 
     - 'In Berliner "Besetzereck" treten {1982} für die Gage von 50 Mark, nem Kasten Bier und zwei Litern Milch das erste Mal "Die Ärzte" vor Publikum auf.'
-09-27: ~
+#1960: Erstmals treffen während des Präsidentschaftswahlkampfs in den Vereinigten Staaten mit John F. Kennedy und Richard Nixon zwei Kandidaten bei einem Fernsehduell aufeinander.
+#1905: Albert Einstein veröffentlicht seine spezielle Relativitätstheorie in den Annalen der Physik.
+#1887: Emil Berliner aus Hannover meldet ein Grammophon zum Patent an, das als Tonträger Schallplatten benutzt.
+#1957: Im Winter Garden Theatre in New York City findet die Uraufführung des Musicals West Side Story statt. Die Musik stammt von Leonard Bernstein, die Gesangstexte von Stephen Sondheim und das Buch von Arthur Laurents nach einer Idee des Choreographen Jerome Robbins.
+#1969: In Großbritannien kommt Abbey Road auf den Markt – das letzte von den Beatles gemeinsam aufgenommene Album. Das von Iain MacMillan aufgenommene Photo auf dem Cover des Albums heizt die Paul is dead-Verschwörungstheorie weiter an.
+#1987: Thomas Gottschalk moderiert in der Hofer Freiheitshalle erstmals die Fernsehsendung Wetten, dass..?
+#1889: *Martin Heidegger, deutscher Philosoph
+#1985 *Talulah Jane Riley-Milburn ist eine britische Schauspielerin. Wikipedia
+#1983: Stanislaw Jewgrafowitsch Petrow verhindert einen Atomkrieg, indem er sich, entgegen den Anzeigen seines elektronischen Frühwarnsystems, weigert, einen scheinbaren Raketenangriff der USA auf die UdSSR für real zu halten.
+09-27:
+    - 'Vor {1983} Jahren hat Richard Stallmann das GNU-Projekt angekündigt.'
+    - '{1905} Jahre ist es nun her, das Albert Einstein seinen Aufsatz "Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?" veröffentlich. Der Ausatz mit der Formel E = mc²'
+    - 'Vor genau {1937} Jahren wurde offiziell der Bali Tiger ausgerottet'
+    - 'Der Berliner {1945} wird heute 74 Jahre alt'
+    - 'Der Hochchor des Kölner Doms wurde heute vor genau {1322} Jahren geweiht.'
+    - 'Meat Loaf wird heute {1947} Jahre alt.'
+    - 'Vor {1968} Jahren wurde das Musikal "Hair" in Londong zum ersten Mal aufgeführt.'
+    - 'Seit {1998} Jahren gibt es nun die Sendung "alpha-Centauri" mit Haral Lesch'
 09-28: ~
+#1928: Die Comedian Harmonists geben ihr Debüt im Berliner Großen Schauspielhaus.
+#1987: Die erste Folge von Raumschiff Enterprise: Das nächste Jahrhundert wird in den USA ausgestrahlt.
+#1938: Ben E. King, US-amerikanischer Musiker, Sänger und Songschreiber
+#1989: Alligatoah, deutscher Musiker
+#1978: Bushido, deutscher Rapper
 09-29: ~
+#1936: *Silvio Berlusconi, italienischer Politiker und Unternehmer
+#1995: Die PlayStation kommt in Europa auf den Markt.
+#1922: Mit der Oberbürgermeister Haken verlässt das erste der sogenannten „Philosophenschiffe“ den Hafen von Petrograd in Richtung Stettin. An Bord befinden sich regimekritische Intellektuelle, die die sowjetrussische Regierung auf diese Weise ins Ausland zwangsabschiebt.
 09-30: ~
+#1953: Mit dem Tiefseetauchgerät Trieste erreichen der Schweizer Physiker Auguste Piccard und sein Sohn Jacques eine Rekordtiefe von 3.150 Metern.
+#1954: Das erste Atom-U-Boot der United States Navy, die USS Nautilus, wird in Dienst gestellt.
+#1994: Das Computerspiel Doom 2 von id Software wird, für MS-DOS, weltweit veröffentlicht. Aufgrund von mangelnden technischen Neuerungen konnte es allerdings nicht an den kommerziellen Erfolg des Vorgängers Doom anschließen.
+#1960: Der US-Sender ABC strahlt die erste Folge von The Flintstones (Familie Feuerstein) aus.
+#1888: Jack the Ripper bringt vermutlich mit Elizabeth Stride und Catherine Eddowes zwei Frauen an einem Tag um.
+#1975: *Marion Cotillard, französische Schauspielerin
+#1955: +James Dean, US-amerikanischer Schauspieler und Jugendidol
 10-01: ~
+#331 v. Chr.: Alexander der Große besiegt den persischen Herrscher Dareios III. in der Schlacht von Gaugamela. Die Schlacht markiert das Ende des Perserreichs.
+#1957: Das pharmazeutische Unternehmen Grünenthal bringt in Deutschland das von Heinrich Mückter entwickelte Medikament Contergan auf den Markt. Das Medikament, das den Wirkstoff Thalidomid enthält, wird hauptsächlich von Schwangeren eingenommen und führt in der Folge zu schweren Fehlbildungen bei Neugeborenen, der so genannten Phokomelie.
+#1971: Roy Oliver Disney eröffnet in der Nähe von Orlando (Florida) einen Vergnügungspark, den er zu Ehren seines verstorbenen Bruders Walt Disney World Resort nennt.
+#1942: *Günter Wallraff, deutscher Schriftsteller und Enthüllungsjournalist
+#2012: +Dirk Bach, deutscher Schauspieler, Komiker und Moderator
+
 10-02: ~
+#2000: Durch den Zusammenschluss der Pro Sieben Media AG (ProSieben, Kabel 1 und N24) und der Sat.1 SatellitenFernsehen entsteht die ProSiebenSat.1 Media AG, das größte deutsche Fernsehunternehmen.
+#2015: Gründung von Alphabet Inc., US-amerikanische Holding Gesellschaft
+#1930: Henry Ford legt in Köln den Grundstein für ein Ford-Autowerk.
+#1950: Der Comic-Strip Peanuts von Charles M. Schulz erscheint erstmals in sieben US-amerikanischen Zeitungen.
+#1959: In den USA wird die erste Folge der Fernsehserie Twilight Zone ausgestrahlt.
+#2012: Das Bundesverfassungsgericht in Karlsruhe urteilt zum Internetfernsehen in einem Grundsatzurteil, dass auch internetfähige Computer der Rundfunkgebührenpflicht unterliegen.
+#1869: *Mahatma Gandhi, indischer Rechtsanwalt, Publizist, Morallehrer, Asket und Pazifist
+#1951: *Sting, britischer Rock-Musiker, Sänger und Schauspieler
+
 10-03: ~
+#1969: Der Berliner Fernsehturm wird eröffnet.
+#2003: Der Trickkünstler Roy Horn wird während einer Show in Las Vegas von dem weißen Tiger Montecore angegriffen und schwer verletzt.
+#1789: US-Präsident George Washington propagiert den ersten Thanksgiving Day.
+#1863: Thanksgiving wird von US-Präsident Abraham Lincoln als nationaler Feiertag auf den vierten Donnerstag im November festgelegt.
+#
+
+
 10-04: ~
+#1963: Vor den Vereinten Nationen hält der äthiopische Kaiser Haile Selassie eine Rede, in der er auch auf den ausstehenden Frieden in Afrika eingeht. Eine Textpassage daraus wird später vom jamaikanischen Sänger und Songschreiber Bob Marley für das Lied War verwendet.
+#1927: Der als Schachspieler bekanntere Edward Lasker erhält ein Patent auf die von ihm erfundene Muttermilchpumpe.
+#1985: Zur Förderung von freier Software gründet der amerikanische Aktivist Richard Stallman die Free Software Foundation (FSF).
+# 1947: +Max Planck, deutscher theoretischer Physiker, Begründer der Quantenphysik, Nobelpreisträger
 10-05: ~
+#1842: Josef Groll braut den ersten Sud Bier nach Pilsner Brauart.
+#1962: Love Me Do, die erste Single der Beatles, komponiert von Paul McCartney und John Lennon erscheint in Großbritannien. Sie erreicht bald darauf Platz 17 in den britischen Charts und ist der Beginn einer erfolgreichen Zusammenarbeit mit Produzent George Martin.
+#1962: Dr. No, der erste Film der James Bond-Reihe nach den Romanen von Ian Fleming, hat in Großbritannien Premiere. Hauptdarsteller ist Sean Connery, erstes „Bond-Girl“ Ursula Andress. Regisseur Terence Young entwarf für den Film gemeinsam mit Ursula Andress den Dr.-No-Bikini. Das erstmals gespielte James Bond Theme von Monty Norman, interpretiert von John Barry, wird zum Leitmotiv des Filmhelden.
+#1992: Die Mutter des Erlanger Babys verunglückt bei einem Autounfall, woraufhin in Deutschland eine breite öffentliche Debatte über das Recht auf ein Sterben in Würde entfacht wird.
+#1975: *Kate Winslet, britische Schauspielerin
+#2011: +Steve Jobs, US-amerikanischer IT-Unternehmer
 10-06: ~
+#1945: Die erste Ausgabe der Süddeutschen Zeitung erscheint.
+#1582: Durch den Beginn der Gregorianischen Zeitrechnung gibt es diesen Tag in den katholischen Ländern Europas nicht.
+#1961: Der Chirurg Heinz-Joachim Sykosch implantiert den ersten Herzschrittmacher in Deutschland.
+#1600: Bei der Hochzeit Heinrichs IV. von Frankreich mit der Prinzessin Maria von Medici wird im Palazzo Pitti die „Favola in Musica“ L'Euridice favola drammatica von Jacopo Peri als erste erhalten gebliebene Oper der Musikgeschichte uraufgeführt.
+#1889: Im Pariser Stadtviertel Montmartre im 18. Arrondissement wird das von Joseph Oller erbaute Vergnügungslokal Moulin Rouge eröffnet, das sich zum berühmtesten Varietétheater der Welt entwickeln wird.
+#1999: Die Dreharbeiten der Herr-der-Ringe-Trilogie beginnen.
 10-07: ~
+#1948: Pierre-Jules Boulanger, Vorstandsvorsitzender des französischen Automobilherstellers Citroën, präsentiert auf dem Pariser Autosalon das von Designer Flaminio Bertoni und Konstrukteur André Lefèbvre geschaffene Modell Citroën 2CV. Die „Ente“ wird eines der erfolgreichsten Automodelle aller Zeiten, dessen Produktion erst 1990 endgültig eingestellt wird.
+#1996: In den USA geht erstmals der Fox News Channel des Medienunternehmers Rupert Murdoch auf Sendung.
+#1920: Der erste Karl-May-Film, der Stummfilm Auf den Trümmern des Paradieses, feiert seine Uraufführung in den Kammer-Lichtspielen in Dresden. Der Film gilt heute als verschollen.
+#2005: Geschichte und Entwicklung der Wikipedia: Die deutschsprachige Wikipedia feiert mit dem Artikel über die Gemeine Binsenjungfer den 300.000 Artikel.
+#1885: *Niels Bohr, dänischer Physiker, Nobelpreisträger
+#1952: *Wladimir Putin, russischer Präsident
+#1849: +Edgar Allan Poe, US-amerikanischer Schriftsteller
 10-08: ~
+#1958: *Ursula von der Leyen, deutsche Politikerin
+#1970: *Matt Damon, US-amerikanischer Schauspieler
+
 10-09: ~
+#2006: Google übernimmt für 1,65 Mrd. US-Dollar die Firma YouTube. Der Betrieb soll mit den Gründern Chad Hurley und Steve Chen die Geschäfte jedoch vorerst unabhängig weiterführen.
+#1986: Das Musical The Phantom of the Opera von Andrew Lloyd Webber nach dem gleichnamigen Roman von Gaston Leroux wird am Londoner Her Majesty’s Theatre uraufgeführt.
+#1955: In Hamburg findet die erste öffentliche gemeinsame Ziehung von Lottozahlen in der Geschichte der Bundesrepublik Deutschland statt.
+#1991: +Roy Black, deutscher Schlagersänger und Schauspieler
+
 10-10: ~
+#1865: John Wesley Hyatt erhält sein erstes Patent auf die von ihm erfundene Billardkugel aus Nicht-Elfenbein. Einige Jahre später gelingt ihm beim Streben nach Verbesserung der Erfindung der Entwicklungsprozess für Zelluloid.
+#1859: In Prag wird der Männerbund Schlaraffia als weltweite deutschsprachige Vereinigung zur Pflege von Freundschaft, Kunst und Humor gegründet.
 10-11: ~
+#1971: Die Single Imagine von John Lennon wird veröffentlicht.
 10-12: ~
+#1492: Entdeckung Amerikas: Christoph Kolumbus geht auf der Insel Guanahani auf den heutigen Bahamas an Land und nennt die Insel San Salvador.
+#1887: Das japanische Unternehmen Yamaha Corporation wird gegründet. Bekannt wird es vor allem durch seine Musikinstrumente und HiFi-Systeme.
+#1971: Das Rock-Musical Jesus Christ Superstar von Andrew Lloyd Webber mit den Liedtexten von Tim Rice wird in New York uraufgeführt.
+#1979: Mit „Die drei ??? und der Super-Papagei“ erscheint das erste Hörspiel von Die drei ??? unter dem Label Europa.
+#1968: *Hugh Jackman, australischer Schauspieler
+
 10-13: ~
+#54: Nach dem Tod des Claudius wird dessen Stiefsohn Nero als letzter Julier römischer Kaiser.
+#1884: Die Internationale Meridiankonferenz in Washington, D.C. legt den Nullmeridian auf die Sternwarte in Greenwich. Protagonist ist Sir Sandford Fleming.
+#1930: Das Frachtflugzeug Junkers Ju 52/1m, das als „Fliegender Möbelwagen“ bekannt werden wird, absolviert seinen Erstflug.
+#1961: Verkehrspsychologe Karl Peglau reicht in Berlin seinen Vorschlag für das „Ost-Ampelmännchen“ ein.
+#1983: In Chicago findet das weltweit erste private Gespräch über ein Mobiltelefon statt, nachdem der Advanced Mobile Phone Service freigeschaltet wird.
+#1994: Die erste Version des Netscape Navigator wird veröffentlicht.
+#1792: Der Grundstein zum Weißen Haus wird gelegt.
+#1975: In Deutschland erscheint die erste regelmäßige Ausgabe des Comic-Magazins Yps. Besondere Beliebtheit erreicht das Heft aufgrund des jedem Heft beigelegten Gimmicks, oft ein Spielzeug, was es in den ersten Jahrzehnten seines Erscheinens von anderen Comic-Magazinen für Jugendliche abhebt.
 10-14: ~
+#1964: Martin Luther King wird der Friedensnobelpreis zuerkannt.
+#1974: Die erste deutsche Filiale des schwedischen Möbelmarktes IKEA wird in Eching bei München eröffnet.
+#1999: Die Spielkonsole Dreamcast von Sega wird in Europa veröffentlicht. Aufgrund des ausbleibenden kommerziellen Erfolges, ist sie die vorerst letzte stationäre Spielkonsole dieses Unternehmens.
+#1996: Matthias Ettrich startet das K Desktop Environment-Projekt.
+#2012: Felix Baumgartner springt im Rahmen des Projekts Red Bull Stratos aus 39 Kilometern Höhe ab und durchbricht als erster Mensch im freien Fall die Schallmauer.
+#1955: Jim Henson erfindet die Figur Kermit der Frosch, die einzige seiner Puppen, die sowohl in der Sesamstraße als auch in der Muppet Show auftreten wird.
+#1926: Das beliebte Kinderbuch Winnie-the-Pooh von Alan Alexander Milne erscheint erstmals im Londoner Verlag Methuen & Co.
 10-15: ~
+#1880: 38 Jahre nach Gründung des Zentral-Dombau-Vereins zu Köln wird die Vollendung des 1248 begonnenen Kölner Doms gefeiert.
 10-16: ~
+#1989: In einem Usenet-Posting wird erstmals Godwins Gesetz formuliert.
+#1854: *Oscar Wilde, irischer Schriftsteller
+#1927: *Günter Grass, deutscher Schriftsteller, Bildhauer, Maler und Grafiker, Nobelpreisträger
+#1958: *Tim Robbins, US-amerikanischer Schauspieler
 10-17: ~
+#1985: Intel stellt mit dem 80386 die erste 32-Bit-CPU der x86-Familie vor.
+#1967: In New York wird das Musical Hair uraufgeführt.
+#1990: Die erste Version der Internet Movie Database (IMDb) wird veröffentlicht.
+#1933: Albert Einstein emigriert aus dem Dritten Reich in die USA.
+#1918: *Rita Hayworth, US-amerikanische Schauspielerin
+#1938: *Evel Knievel, US-amerikanischer Motorradstuntman
+#1972: *Eminem, US-amerikanischer Rapper und Schauspieler
+
+
 10-18: 
     - 'Laut Wikipedia wurde vor exakt {2005} Jahre Symfony (so ein PHP-Framework-Ding) veröffentlicht.'
+#1995: OpenBSD1.1, die erste Ausgabe des Open-Source-Betriebssystems OpenBSD, wird freigegeben.
+#1851: Der Roman Moby Dick von Herman Melville, den dieser seinem Vorbild Nathaniel Hawthorne gewidmet hat, erscheint erstmals bei Richard Bentley in London.
+#1967: Der Zeichentrickfilm Das Dschungelbuch aus den Walt-Disney-Studios kommt in die US-amerikanischen Kinos.
+#1931: +Thomas Alva Edison, US-amerikanischer Erfinder und Unternehmer (Elektrizität und Elektrotechnik)
 10-19: ~
+#1913: Die Deutsche Lebens-Rettungs-Gesellschaft e. V. (DLRG) wird im Hotel de Prusse in Leipzig gegründet.
+#1959: Die erste Diskothek Deutschlands wird gegründet, der Scotch-Club.
 10-20: ~
+#1910: Die RMS Olympic, ein Schwesterschiff der RMS Titanic und das einzige Schiff der Olympic-Klasse, das nicht einem Unglück zum Opfer fallen wird, wird vom Stapel gelassen.
+#1955: In Großbritannien erscheint mit Return of the King der dritte Teil von Tolkiens The Lord of the Rings.
+  #
+#1973: Das Sydney Opera House
+#1973: Königin Elisabeth II. eröffnet das Opernhaus von Sydney. Die Eröffnung, bei der Beethovens 9. Sinfonie zur Aufführung gebracht wird, wird live im Fernsehen übertragen und mit einem großen Feuerwerk gefeiert.
+#1971: Snoop Dogg, US-amerikanischer Rapper und Schauspieler
 10-21: ~
+#1879: Thomas Alva Edisons erste markttaugliche Glühlampe besteht einen Dauertest von über 40 Stunden im Menlo Park-Labor von New Jersey.
+#1833: Alfred Nobel, schwedischer Erfinder und Industrieller
 10-22: ~
+#1938: Die erste Herstellung einer Fotokopie einer Schriftvorlage gelingt Chester Carlson in einem Labor in der Nähe von New York.
+#2009: Microsoft veröffentlicht das Betriebssystem Windows 7, den Nachfolger von Windows Vista.
+#
 10-23: ~
+#2001: Der erste iPod mit 5-GB-Festplatte wird vorgestellt.
+#1971: Daimler-Benz meldet seine Entwicklung des Airbag als Aufprallschutzvorrichtung für den Insassen eines Kraftfahrzeugs für ein deutsches Patent an.
+#1902: Max Brod trifft in der Prager „Lese- und Redehalle der deutschen Studenten“ Franz Kafka, als dieser dort einen Vortrag über Arthur Schopenhauer hielt. Eine lebenslange Freundschaft beginnt.
+#1958: Im französischen Magazin Spirou veröffentlicht der Zeichner Peyo erstmals einen Comic mit den Schlümpfen in einer Nebenrolle.
+#1968: Der US-amerikanische Jazzmusiker Louis Armstrong brachte mit What a wonderful world einen Welthit während der Proteste gegen Vietnam-Krieg und Rassendiskriminierung heraus.
+#1970: Der erste Teil der Schulmädchen-Report-Reihe, die als erfolgreichste deutsche Kinoproduktion gilt, hat Premiere.
+#1976: *Ryan Reynolds, kanadischer Schauspieler
 10-24: ~
+#1824: Auf Anregung von Johann Wolfgang von Goethe wird in Frankfurt am Main ein Physikalischer Verein gegründet.
+#1931: Al Capone wird wegen Steuerhinterziehung zu 50.000 Dollar Strafe und elf Jahren Gefängnis verurteilt.
+#2005: +Rosa Parks, US-amerikanische Bürgerrechtlerin
+#Tag der Bibliotheken in Deutschland (seit 1995) und Südtirol (seit 2009)
 10-25: ~
+#2001: Im Rahmen des „Krieges gegen den Terrorismus“ wird der USA PATRIOT Act verabschiedet.
+#2001: Microsoft veröffentlicht das neue Betriebssystem Windows XP
+#1881: *Pablo Picasso, spanischer Maler, Grafiker und Bildhauer
+#1984: *Katy Perry, US-amerikanische Sängerin
 10-26: ~
-10-27: 
-    - 'Farin Urlaub (nicht seinn echter Name) wird heute {1963}. Man kennt ihn als Gitarrist und Sänger der Band "Soilent Grün" und Fotografen.'
+#2012: Microsoft veröffentlicht das Betriebssystem Windows 8.
+#1984: In den USA kommt der Science-Fiction-Film Terminator von James Cameron in die Kinos. Der mit verhältnismäßig bescheidenem Budget gedrehte B-Movie mit Arnold Schwarzenegger und Linda Hamilton in den Hauptrollen entwickelt sich zu einem Kultfilm.
+#1965: Die Beatles werden von Königin Elisabeth II. im Londoner Buckingham Palace mit dem Orden Member of the British Empire ausgezeichnet. John Lennon gibt seinen Orden ein paar Jahre später aus Protest gegen die Beteiligung Großbritanniens am Biafra-Krieg wieder zurück.
+10-27:
+    - 'Farin Urlaub (nicht sein echter Name) wird heute {1963}. Man kennt ihn als Gitarrist und Sänger der Band "Soilent Grün" und als Fotografen.'
+#1901: In Paris findet der erste Raub statt, bei dem ein Auto zur Flucht benutzt wird.
+#1980: Ein Ausfall des Vorläufers des heutigen Internets (ARPANET), ausgelöst durch Verbreitung eines fehlerhaften Routing-Updates, machte das Netz für die wenigen tausend Hosts sechs Stunden lang unbenutzbar und führte u. a. zur Entwicklung eines sicheren Routing-Protokolls.
 10-28: ~
-10-29: 
+#1492: Christoph Kolumbus erreicht auf seiner ersten Reise die Insel Kuba.
+#1869: Dmitri Iwanowitsch Mendelejew veröffentlicht das Periodensystem der Elemente.
+#1981: Die Metal-Band Metallica wird gegründet.
+#1955: *Bill Gates, US-amerikanischer Unternehmer (Microsoft)
+#1967: *Julia Roberts, US-amerikanische Schauspielerin
+
+10-29:
     - 'Nach der "Reunion" trete die Ärzte das erste Mal wieder auf. Das war vor {1993} Jahren in Bielefeld. Begonnen hat das Konzert mit dem niemals schlecht werdendem Song "Schrei nach Liebe".'
+#1959: In der Erstausgabe des Comic-Magazins Pilote erscheint die erste Folge von Astérix le Gaulois.
+#1967: Das Musical Hair von Galt MacDermot (Musik), Gerome Ragni und James Rado (beide Text) wird im Public Theatre von New York City uraufgeführt.
+#1971: *Winona Ryder, US-amerikanische Filmschauspielerin
+
 10-30: ~
+#1990: Im Eurotunnel zwischen Frankreich und England wird ein erster Durchstich geschafft.
+#1994: Professor Thomas Ray Nicely informiert die Öffentlichkeit über den FDIV-Bug im Intel Pentium.
+#1996: Norddeich Radio sendet die letzte offizielle Botschaft im Morsealphabet über Kurzwelle. Die Nachricht besteht aus den Buchstaben C U L T R (See You later).
+#1938: Der 22-jährige Orson Welles verursacht aufgrund seines erschreckend echt wirkenden Hörspiels Krieg der Welten bei den Radiohörern der US-amerikanischen Oststaaten Irritationen.
+
 10-31: ~
+#1756: In der Nacht gelingt Giacomo Casanova die Flucht aus den Bleikammern des Dogenpalastes in Venedig, wo er wegen „Schmähungen gegen die heilige Religion“ eingesperrt war.
+#1892: Die Kurzgeschichten Die Abenteuer des Sherlock Holmes von Arthur Conan Doyle erscheinen in Großbritannien.
+#2011: Die Vereinten Nationen proklamieren 7 Milliarden Menschen auf der Erde.[1]
+
+
 11-01: ~
 11-02: ~
 11-03: ~

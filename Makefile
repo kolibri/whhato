@@ -5,7 +5,7 @@ full-deploy:
 	$(MAKE) install
 	$(MAKE) test
 	$(MAKE) tarball
-	$(MAKE) provision
+#	$(MAKE) provision
 	$(MAKE) deploy
 
 vagrant-start:
@@ -33,7 +33,7 @@ install:
 	cd project && composer install --no-interaction --prefer-dist --optimize-autoloader
 	cd project && ./bin/phpunit install
 
-test:
+test: clean
 	cd project && ./bin/console lint:yaml data
 	cd project && ./bin/console lint:twig templates
 	cd project && ./bin/phpunit
@@ -44,6 +44,16 @@ test-coverage:
 
 cs-fixer:
 	cd project && ./vendor/bin/php-cs-fixer fix
+
+clean:
+	rm -rf project/var/cache/*
+
+
+docker-build:
+	docker build -t whhato-deploy .
+docker-run: docker-build
+	docker run -ti whhato-deploy
+
 
 tarball: install
 	rm -f whhato.tar.gz

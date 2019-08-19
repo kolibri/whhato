@@ -6,44 +6,48 @@ namespace App\Controller;
 
 use GuzzleHttp\Client;
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
-use KnpU\OAuth2ClientBundle\Client\Provider\SlackClient;
-use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
-class SlackController extends Controller
+class SlackController
 {
-    public function connectAction(ClientRegistry $clientRegistry)
+    private $oauthClientId;
+    private $oauthClientSecret;
+
+    public function __construct(string $oauthClientId, string $oauthClientSecret)
+    {
+        $this->oauthClientId = $oauthClientId;
+        $this->oauthClientSecret = $oauthClientSecret;
+    }
+
+    /** @Route("/connect/slack", name="connect_slack_start") */
+    public function connectAction(ClientRegistry $clientRegistry): Response
     {
         return $clientRegistry
             ->getClient('slack')
             ->redirect(['commands']);
     }
 
-    public function connectCheckAction(Request $request, ClientRegistry $clientRegistry)
+    /** @Route("/connect/slack/check", name="connect_slack_check") */
+    public function connectCheckAction(Request $request, UrlGeneratorInterface $urlGenerator): Response
     {
-        try {
-            $url = sprintf(
+        $url = sprintf(
                 'https://slack.com/api/oauth.access?code=%s&client_id=%s&client_secret=%s&redirect_uri=%s',
                 $request->query->get('code'),
-                $this->getParameter('oauth_client_id'),
-                $this->getParameter('oauth_client_secret'),
-                $this->generateUrl('connect_slack_check', [], UrlGeneratorInterface::ABSOLUTE_URL)
+                $this->oauthClientId,
+                $this->oauthClientSecret,
+                $urlGenerator->generate('connect_slack_check', [], UrlGeneratorInterface::ABSOLUTE_URL)
             );
 
-            $guzzleClient = new Client();
-            $response = $guzzleClient->request('GET', $url);
+        $guzzleClient = new Client();
+        $response = $guzzleClient->request('GET', $url);
 
-            if(200 !== $response->getStatusCode()) {
-                return new Response('Something went wrong with access slack');
-            }
-
-            return new Response('ok. Everything should work now');
-        } catch (IdentityProviderException $e) {
-            return new Response('error', 500);
+        if (200 !== $response->getStatusCode()) {
+            return new Response('Something went wrong with access slack');
         }
+
+        return new Response('ok. Everything should work now');
     }
 }

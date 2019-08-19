@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p><a href="{{ path('index') }}">Main page</a></p>
+    <h1>Available messages</h1>
+    <ul>
+        {% for month, days in all %}
+            <li class="month">
+                <ul>
+                    {% for day, messages in days %}
+                        <li class="day">
+                            {{ month }} - {{ day }}: {{ messages|length }} Messages
+                            <ul>
+                                {% for message in messages %}
+                                    <li>{{ message.rawMessage }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

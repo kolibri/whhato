@@ -8,3 +8,11 @@
 ###< symfony/framework-bundle ###
 project/.idea
 whhato.tar.gz
+coverage/
+
+
+codeship.aes
+codeship.env
+codeship_deploy_key
+codeship_deploy_key.pub
+

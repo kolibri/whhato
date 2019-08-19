@@ -6,10 +6,6 @@
   service: app
   command: chmod 600 /root/.ssh/id_rsa
 
-- name: add server to list of known hosts
-  service: app
-  command: /bin/bash -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFAbmvxhlJc5Ks928Tzvec62a7g+Fido7b0w+sP968fAXtkYwyFzVZxfAHpkeqbiWOYLspL0J4jxqgqKoVEWxk8RpakewruTdYQqP3oBmDQPMl/BzWZ3u4yPOHhn8meOs+Q4st4Cp12f2yBGipPz1vufWX7ZkbxMxuCMX47tuv9SJ6iSmFwk3TP6BFSwD/F+vm68fCBaDFSIyPGOFW+FxLexr92zUUy4J0JQRWm05ZuFKY1pZQiW+8ptmwl2AUyNsbxAvhipJtvJzW2LZYsuKNAx5QBnAU8B7KIGAz+AeXtqyPxhXDvwJSlBYSkX/yzrOziw+l/2ncN5zweZOUVvBB whhato' >> /root/.ssh/known_hosts"
-
 - name: build and deploy
   service: app
   command: make STAGE=prod -o StrictHostKeyChecking=no full-deploy

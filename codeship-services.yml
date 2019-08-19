@@ -6,3 +6,5 @@ app:
     - codeship.env.encrypted
   volumes:
     - ./.ssh:/root/.ssh
+  environment:
+    - ANSIBLE_HOST_KEY_CHECKING=False

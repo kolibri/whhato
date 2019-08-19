@@ -8,7 +8,7 @@
 
 - name: build and deploy
   service: app
-  command: make STAGE=prod full-deploy
+  command: make STAGE='prod -o StrictHostKeyChecking=no' full-deploy
 
 #- name: add server to list of known hosts
 #  service: app

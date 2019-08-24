@@ -6,7 +6,8 @@ namespace App\Whhato;
 
 class DateMessage
 {
-    private const FORMAT_YEAR_MONTH_DAY = 'Y-m-d';
+    public const FORMAT_YEAR_MONTH_DAY = 'Y-m-d';
+    private $id;
     private $monthDay;
     private $message;
 

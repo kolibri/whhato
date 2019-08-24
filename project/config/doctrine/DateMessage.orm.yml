@@ -1,0 +1,15 @@
+App\Whhato\DateMessage:
+  type: entity
+  repositoryClass: App\Whhato\DoctrineLoader
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    message:
+      type: string
+      length: 1000
+    monthDay:
+      type: string
+      length: 5

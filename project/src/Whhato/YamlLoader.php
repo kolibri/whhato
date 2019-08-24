@@ -7,19 +7,24 @@ namespace App\Whhato;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Yaml\Yaml;
 
-class Loader
+class YamlLoader implements LoaderInterface
 {
-    private $dataPath;
+    private $data;
 
     public function __construct(string $dataPath)
     {
-        $this->dataPath = $dataPath;
+        $this->data = self::loadDataPath($dataPath);
     }
 
-    public function loadDataPath(): array
+    public function findByDate(\DateTimeInterface $dateTime): array
+    {
+        return $this->data[$dateTime->format(Whhato::FORMAT_MONTH_DAY)] ?? [];
+    }
+
+    public static function loadDataPath(string $dataPath): array
     {
         $finder = new Finder();
-        $finder->files()->in($this->dataPath)->name('/\.yaml$/');
+        $finder->files()->in($dataPath)->name('/\.yaml$/');
         $buffer = [];
 
         foreach ($finder as $item) {

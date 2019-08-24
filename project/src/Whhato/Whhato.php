@@ -8,16 +8,22 @@ class Whhato
 {
     public const FORMAT_MONTH_DAY = 'm-d';
 
-    private $dateMessages;
+    /** @var LoaderInterface[] */
+    private $loaders;
 
-    public function __construct(Loader $loader)
+    public function __construct(iterable $loaders)
     {
-        $this->dateMessages = $loader->loadDataPath();
+        $this->loaders = $loaders;
     }
 
     public function getRandomDateMessage(\DateTimeInterface $date): DateMessage
     {
         $messages = $this->getDateMessages($date);
+
+        if (empty($messages)) {
+            throw new DateMessageNotFoundException(sprintf('No messages for %s', $date->format(self::FORMAT_MONTH_DAY)));
+        }
+
         $rand = array_rand($messages); // Leave this for debugging ;)
 
         return $messages[$rand];
@@ -26,18 +32,12 @@ class Whhato
     /** @return DateMessage[] */
     public function getDateMessages(\DateTimeInterface $date): array
     {
-        $monthDay = $date->format(self::FORMAT_MONTH_DAY);
-
-        if (!$this->hasDateMessage($date)) {
-            throw new DateMessageNotFoundException(sprintf('no entries for date %s', $monthDay));
+        $messages = [];
+        foreach ($this->loaders as $loader) {
+            $messages = array_merge($messages, $loader->findByDate($date));
         }
 
-        return $this->dateMessages[$monthDay];
-    }
-
-    public function hasDateMessage(\DateTimeInterface $date): bool
-    {
-        return array_key_exists($date->format(self::FORMAT_MONTH_DAY), $this->dateMessages);
+        return $messages;
     }
 
     public function overview(): array
@@ -52,7 +52,7 @@ class Whhato
                 $buffer[$month] = [];
             }
 
-            $buffer[$month][$day] = $this->hasDateMessage($date) ? $this->getDateMessages($date) : [];
+            $buffer[$month][$day] = $this->getDateMessages($date);
         }
 
         return $buffer;
@@ -62,7 +62,7 @@ class Whhato
     {
         $bufferDate = \DateTime::createFromFormat(\DATE_ATOM, ($date->format(\DATE_ATOM)));
         for ($inRow = 0; $inRow < 366; ++$inRow) {
-            if (!$this->hasDateMessage($bufferDate)) {
+            if (empty($this->getDateMessages($bufferDate))) {
                 return $inRow;
             }
             $bufferDate->add(new \DateInterval('P1D'));

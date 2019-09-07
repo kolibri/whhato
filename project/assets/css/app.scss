@@ -1,33 +1,63 @@
 body {
-    background-color: #92c3d3;
-    font-family: 'Lato', sans-serif;
-    padding: 2em;
+  background-color: #92c3d3;
+  font-family: 'Lato', sans-serif;
+  padding: 2em;
 }
 
 #message {
+  min-height: 25vh;
+
+  span {
+    display: block;
     min-height: 25vh;
-    span {
-      display: block;
-      min-height: 25vh;
-    }
+  }
 }
 
 #statistics {
-    dl {
-      dt {
-        display: inline-block;
-      }
-      dt::after {
-        content: ':';
-      }
-      dd {
-        display: inline-block;
-        margin-left: 0.2em;
-        padding-right: 1em;
-      }
+  dl {
+    dt {
+      display: inline-block;
     }
+
+    dt::after {
+      content: ':';
+    }
+
+    dd {
+      display: inline-block;
+      margin-left: 0.2em;
+      padding-right: 1em;
+    }
+  }
 }
 
 #info {
   padding-top: 3em;
+}
+
+#overview {
+  .calendar {
+    display: block;
+    .month {
+      display: grid;
+      width: 90vw;
+      grid-template-columns: repeat(7, 1fr);
+      position: relative;
+
+      .day {
+        width: 11vw;
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            margin: 0;
+
+          }
+          li.empty {
+            color: #848484;
+          }
+        }
+      }
+    }
+  }
 }

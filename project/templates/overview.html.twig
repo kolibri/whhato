@@ -2,23 +2,26 @@
 
 {% block body %}
     <p><a href="{{ path('index') }}">Main page</a></p>
-    <h1>Available messages</h1>
-    <ul>
-        {% for month, days in all %}
-            <li class="month">
-                <ul>
-                    {% for day, messages in days %}
-                        <li class="day">
-                            {{ month }} - {{ day }}: {{ messages|length }} Messages
-                            <ul>
-                                {% for message in messages %}
-                                    <li>{{ message.rawMessage }}</li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </li>
-        {% endfor %}
-    </ul>
+    <section id="overview">
+        <h1>Available messages</h1>
+        <div class="calendar">
+            {% for month, days in all %}
+                <h2 id="{{ month }}">{{ month }}</h2>
+                <div class="month">
+                        {% for day, messages in days %}
+                            <div class="day">
+                                <span>{{ day }}.:   {{ messages|length }}</span>
+                                <ul>
+                                    {% for message in messages|slice(0,4) %}
+                                        <li class="message">{{ message.rawMessage|slice(0,7) }}...</li>
+                                        {% else %}
+                                        <li class="message empty">Nothing</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endfor %}
+                </div>
+            {% endfor %}
+        </ul>
+    </section>
 {% endblock %}

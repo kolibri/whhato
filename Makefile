@@ -31,6 +31,7 @@ deploy:
 
 install:
 	cd project && composer install --no-interaction --prefer-dist --optimize-autoloader
+	cd project && yarn install --non-interactive
 	cd project && ./bin/phpunit install
 
 test: clean

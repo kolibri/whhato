@@ -9,6 +9,13 @@ use PHPUnit\Framework\TestCase;
 
 class CachedRandomizerTest extends TestCase
 {
+    public function testExceptionOnEmptyInput()
+    {
+        $randomizer = new CachedRandomizer($this->createMock(FileCache::class));
+        $this->expectException(\LogicException::class);
+        $randomizer->getRandomElement([], 'key');
+    }
+
     public function testRandomizerDoesNotReturnSameElementInARow()
     {
         /** @var FileCache|MockObject $cache */

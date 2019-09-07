@@ -39,6 +39,8 @@ test: clean
 	cd project && ./bin/phpunit
 	cd project && ./vendor/bin/php-cs-fixer fix --dry-run
 
+test-fix: cs-fixer test
+
 test-coverage:
 	cd project && ./bin/phpunit --coverage-html=../coverage tests/Whhato
 

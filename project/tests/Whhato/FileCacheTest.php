@@ -29,6 +29,26 @@ class FileCacheTest extends TestCase
 
         $cache->addItemToKey($monthDay, 7);
         static::assertSame([3, 7], $cache->getCacheForKey($monthDay));
+
+        unlink($cacheFilePath);
+    }
+
+    public function testClearCache()
+    {
+        $monthDay = '09-26';
+
+        $cacheFilePath = __DIR__.'/FileCacheTestData/'.$monthDay.'.yaml';
+        file_exists($cacheFilePath) && unlink($cacheFilePath);
+
+        $cache = new FileCache(__DIR__.'/FileCacheTestData');
+        static::assertSame([], $cache->getCacheForKey($monthDay));
+
+        $cache->addItemToKey($monthDay, 3);
+        static::assertSame([3], $cache->getCacheForKey($monthDay));
+
+        $cache->clearKey($monthDay);
+        static::assertSame([], $cache->getCacheForKey($monthDay));
+
         unlink($cacheFilePath);
     }
 }

@@ -1,2 +1,5 @@
 parameters:
-    app_data_path: '%kernel.root_dir%/../data/test'
+    app.data_path: '%kernel.root_dir%/../data/test'
+services:
+    App\Whhato\Whhato:
+        $loaders: ['@App\Whhato\YamlLoader']

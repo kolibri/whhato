@@ -1,7 +1,8 @@
 parameters:
     oauth_client_id: '%env(OAUTH_SLACK_CLIENT_ID)%'
     oauth_client_secret: '%env(OAUTH_SLACK_CLIENT_SECRET)%'
-    app_data_path: '%kernel.root_dir%/../data/prod'
+    app.data_path: '%kernel.root_dir%/../data/prod'
+    app.randomizer_cache_path: '%kernel.project_dir%/var/cache'
 services:
     _defaults:
         autowire: true
@@ -10,7 +11,8 @@ services:
         bind:
             $oauthClientId: '%env(OAUTH_SLACK_CLIENT_ID)%'
             $oauthClientSecret: '%env(OAUTH_SLACK_CLIENT_SECRET)%'
-            $dataPath: '%app_data_path%'
+            $dataPath: '%app.data_path%'
+            $fileCacheDir: '%app.randomizer_cache_path%'
 
     App\:
         resource: '../src/*'

@@ -5,11 +5,12 @@ body {
 }
 
 #message {
-  min-height: 25vh;
-
   span {
     display: block;
     min-height: 25vh;
+    color: #4d3212;
+    border: dotted 1px black;
+    padding: 1em;
   }
 }
 
@@ -37,7 +38,6 @@ body {
 
 #overview {
   .calendar {
-    display: block;
     .month {
       display: grid;
       width: 90vw;
@@ -46,13 +46,15 @@ body {
 
       .day {
         width: 11vw;
+
         ul {
           list-style: none;
           padding: 0;
+
           li {
             margin: 0;
-
           }
+
           li.empty {
             color: #848484;
           }

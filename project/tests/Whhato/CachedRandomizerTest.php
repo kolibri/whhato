@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Tests\Whhato;
-
 
 use App\Whhato\CachedRandomizer;
 use App\Whhato\FileCache;
@@ -31,7 +29,7 @@ class CachedRandomizerTest extends TestCase
         $cache->method('getCacheForKey')->willReturn([0, 1, 2]);
         $cache->expects(static::exactly(50))->method('clearKey')->with('key');
 
-        static::assertRandomResult($randomizer, ['one', 'two', 'three'], ['one','two', 'three']);
+        static::assertRandomResult($randomizer, ['one', 'two', 'three'], ['one', 'two', 'three']);
     }
 
     public function testRandomElementKeyIsCached()

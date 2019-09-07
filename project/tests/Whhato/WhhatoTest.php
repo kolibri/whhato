@@ -55,7 +55,7 @@ class WhhatoTest extends TestCase
 
         $whhato = new Whhato($loader, $randomizer);
 
-        static::assertSame($msg1,$whhato->getRandomDateMessage(\DateTimeImmutable::createFromFormat('d.m.Y', '25.01.2020')));
+        static::assertSame($msg1, $whhato->getRandomDateMessage(\DateTimeImmutable::createFromFormat('d.m.Y', '25.01.2020')));
 
         $this->expectException(DateMessageNotFoundException::class);
         $whhato->getRandomDateMessage(\DateTimeImmutable::createFromFormat('d.m.Y', '13.01.2020'));

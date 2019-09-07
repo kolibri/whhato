@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Whhato;
-
 
 class CachedRandomizer
 {
@@ -12,7 +10,6 @@ class CachedRandomizer
     {
         $this->cache = $cache;
     }
-
 
     public function getRandomElement(array $elements, $cacheKey)
     {

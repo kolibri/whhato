@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Tests\Whhato;
-
 
 use App\Whhato\FileCache;
 use PHPUnit\Framework\TestCase;
@@ -12,7 +10,7 @@ class FileCacheTest extends TestCase
     public function testGetCacheWithData()
     {
         $cache = new FileCache(__DIR__.'/FileCacheTestData');
-        static::assertSame([1,2,3], $cache->getCacheForKey('01-25'));
+        static::assertSame([1, 2, 3], $cache->getCacheForKey('01-25'));
         static::assertSame([], $cache->getCacheForKey('09-26'));
     }
 
@@ -30,7 +28,7 @@ class FileCacheTest extends TestCase
         static::assertSame([3], $cache->getCacheForKey($monthDay));
 
         $cache->addItemToKey($monthDay, 7);
-        static::assertSame([3,7], $cache->getCacheForKey($monthDay));
+        static::assertSame([3, 7], $cache->getCacheForKey($monthDay));
         unlink($cacheFilePath);
     }
 }

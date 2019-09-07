@@ -5,7 +5,7 @@
 
 ## A "WHat HAppened TOday" service
 
-Welcome to this project. It's a very simple webservice for a slack app, that has a slash command which tell you what happened today some years ago.
+Welcome to this project. It's a very simple webservice for a slack app, that has a slash command which tells you what happened today some years ago.
 
 You can visit the project at https://whhato.vogelschwarz.de.
 

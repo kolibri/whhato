@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Whhato;
-
 
 use Symfony\Component\Yaml\Yaml;
 
@@ -25,13 +23,13 @@ class FileCache
         $this->saveFile($key, array_merge($this->loadFile($key), [$item]));
     }
 
-    public function clearKey($key): void {
+    public function clearKey($key): void
+    {
         $this->saveFile($key, []);
     }
 
     private function loadFile($key): array
     {
-
         if (!file_exists($this->getCacheFilePath($key))) {
             return [];
         }

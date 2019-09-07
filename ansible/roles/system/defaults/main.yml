@@ -1,4 +1,4 @@
 ---
-ko_authorized_key_file: /home/ko/.ssh/id_rsa.pub
+ko_authorized_key_file: /Users/lukassadzik/.ssh/id_rsa.pub
 ko_user_group: ko
 ko_user_name: ko

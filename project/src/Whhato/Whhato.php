@@ -9,18 +9,23 @@ class Whhato
     public const FORMAT_MONTH_DAY = 'm-d';
 
     private $dateMessages;
+    private $randomizer;
 
-    public function __construct(Loader $loader)
+    public function __construct(Loader $loader, CachedRandomizer $randomizer)
     {
         $this->dateMessages = $loader->loadDataPath();
+        $this->randomizer = $randomizer;
     }
 
     public function getRandomDateMessage(\DateTimeInterface $date): DateMessage
     {
         $messages = $this->getDateMessages($date);
-        $rand = array_rand($messages); // Leave this for debugging ;)
 
-        return $messages[$rand];
+        if (empty($messages)) {
+            throw new DateMessageNotFoundException(sprintf('No messages for %s', $date->format(self::FORMAT_MONTH_DAY)));
+        }
+
+        return $this->randomizer->getRandomElement($messages, $date->format(self::FORMAT_MONTH_DAY));
     }
 
     /** @return DateMessage[] */

@@ -1,27 +1,39 @@
 {% extends 'base.html.twig' %}
-
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
 {% block body %}
-    <h1>Whhato - A what happened today webservice</h1>
+    <h1>Whhato</h1>
+    <h2>What happened today</h2>
 
-    <ul>
-        {% for message in whhato.dateMessages(date()) %}
-            <li>{{ message.format(date()) }}</li>
-        {% endfor %}
-    </ul>
+    <div id="message"></div>
 
-    <p>Messages in a row: {{ whhato.MessagesInRowFor(date()) }}</p>
+    <section id="statistics">
+        <h3>Statistik</h3>
+        <dl>
+            <dt>Anzahl Nachrichten heute</dt>
+            <dd>{{ whhato.getDateMessages(date('now'))|length}}</dd>
 
-    <p><a href="{{ path('overview') }}">All available messages</a></p>
+            <dt>Gepflegte nächste Tage</dt>
+            <dd>{{ whhato.MessagesInRowFor(date()) }}</dd>
+        </dl>
+
+        <p><a href="{{ path('overview') }}">Alle Nachrichten</a></p>
+    </section>
+
+    <section id="info">
+        <h3>Info</h3>
+        <p>
+            Das ist ein kleiner WHat HAppened TOday webservice. Mehr nicht.
+            Wenn Du weißt, was <a href="http://symfony.com">Symfony</a> ist,
+            schau Dir das Projekt auf <a href="https://github.com/kolibri/whhato/">Github</a> an.
+        </p>
+        <p>Geschaffen wurde dieses kleine Projekt von Lukas, Software-Developer, Kolibri und Bücher-Fan und so weiter.</p>
+        <p>
+            Bei Fragen, versuch eine Mail an lukas.sadzik @ gmail . com zu schreiben.<br/>
+            Oder versuch es über Twitter: <a href="https://twitter.com/ko_libri" target="_blank">@ko_libri</a>.<br/>
+        </p>
+    </section>
 
     <!--<a href="{{ path('connect_slack_start') }}">Install for Slack</a>//-->
-
-    <h2>Contact, Imprint and all the other legal stuff</h2>
-    <p>
-        Who made it? Lukas Sadzik, software developer, hummingbird fan, reader and other things.<br/>
-        How to contact this guy? Try writing an email at lukas.sadzik @ gmail.com. Or use twitter <a
-                href="https://twitter.com/ko_libri" target="_blank">@ko_libri</a>.<br/>
-    </p>
-    
-    <a href="https://github.com/kolibri/whhato/">Check this out on github</a>
-
 {% endblock %}

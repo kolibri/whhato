@@ -1,24 +1,34 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <p><a href="{{ path('index') }}">Main page</a></p>
+
+<p><a href="{{ path('index') }}">Main page</a></p>
+<section id="overview">
     <h1>Available messages</h1>
-    <ul>
+    <div class="calendar">
         {% for month, days in all %}
-            <li class="month">
+        <h2 id="{{ month }}">
+                {{ month }}
+            <a href="https://github.com/kolibri/whhato/blob/master/project/data/prod/{{ month }}.yaml">
+                alle Einträge
+            </a>
+        </h2>
+        <div class="month">
+            {% for day, messages in days %}
+            <div class="day">
+                <span>{{ day }}.:   {{ messages|length }}</span>
                 <ul>
-                    {% for day, messages in days %}
-                        <li class="day">
-                            {{ month }} - {{ day }}: {{ messages|length }} Messages
-                            <ul>
-                                {% for message in messages %}
-                                    <li>{{ message.rawMessage }}</li>
-                                {% endfor %}
-                            </ul>
-                        </li>
+                    {% for message in messages|slice(0,4) %}
+                    <li class="message">{{ message.rawMessage|slice(0,7) }}...</li>
+                    {% else %}
+                    <li class="message empty">Nothing</li>
                     {% endfor %}
                 </ul>
-            </li>
+            </div>
+            {% endfor %}
+        </div>
         {% endfor %}
     </ul>
+</section>
+
 {% endblock %}

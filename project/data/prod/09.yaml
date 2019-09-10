@@ -60,22 +60,19 @@
 #1993: Die erste Episode der Fernsehserie Akte X – Die unheimlichen Fälle des FBI mit David Duchovny und Gillian Anderson in den Hauptrollen wird in den USA ausgestrahlt.
 #1933: *Karl Lagerfeld, deutscher Modeschöpfer
 #1960: *Colin Firth, britischer Schauspieler
-09-11: ~
-#1990: US-Präsident George H. W. Bush hält eine Rede, in der er zum ersten Mal vor großem Publikum über die „neue Weltordnung“ (new world order) spricht.
-#1912: In Berlin wird die Diesel-Sulzer-Klose-Thermolokomotive für die Preußischen Staatseisenbahnen fertiggestellt, die weltweit erste Diesellokomotive.
-#1962: The Beatles nehmen ihre erste Single Love Me Do auf.
-09-12: ~
-#1981: Der Chaos Computer Club wird in Berlin gegründet.
-#1931: *Ian Holm, britischer Schauspieler
-#1951: *Joe Pantoliano, US-amerikanischer Schauspieler
-#1957: *Hans Zimmer, deutscher Komponist
-#1986: *Emmy Rossum, US-amerikanische Sängerin und Schauspielerin
-#2018: +Rachid Taha, algerischer Sänger und Musiker
+09-11:
+  - 'Vor {1990} Jahren spricht George H. W. Bush zum ersten Mal vor der Öffentlichkeit von einer neuen Weltordnung. 11 Jahre später liest sein Sohn Siegfried Engelmanns und Elaine C. Bruners Kinderbuch "The Pet Goat" mit einer Schuklasse in Florida.'
+  - 'Die Beatles nahmen vor {1962} ihre erste Single "Love Me Do" auf. Funfact: Das Studio, Abbey Road Studios vernichtete nach der Veröffentlichung die Tonbänder nach dem Abmischen der Aufnahmen. Blöderweise wollte man den Song 1980 auf einer LP wieder veröffentlichen. Hier musste man dann noch eine 7″-Single aus dem Archiv nehmen, bis ein Sammler seine besser klingende Platte an die Plattenfirma "spendete".'
+  - 'Die Diesel-Sulzer-Klose-Thermolokomotive für die Preußischen Staatseisenbahnen, die weltweit erste Diesellokomotive, wurde vor genau {1912} fertig gebaut.'
+09-12:
+  - 'In den Redaktionsräumen der taz wurde vor {1981} Jahren der Chaos Computer Club gegründet. Aber so richtig weiter ging es dann in Hamburg.'
+  - 'Heute hat das Filmgeschäft Geburtstag: Ian Holm (Lord of War, Das fünfte Element) wird {1931}, Emmy Rossum (Das Phantom der Oper, Shameless) wird {1986}, Joe Pantoliano (Die Goonies, Memento) feiert seinen {1951} Geburtstag, und Hans Zimmer (alle Filme?) seinen {1957}.'
+  - 'Rachid Taha weilt nun seit {2018} Jahren nicht mehr unter uns. Der betrübten Stimmung, die sich hierdurch breit machen könnte, entgegen wir mit einem entschlossenem "Barra Barra!"'
 
-09-13: ~
-#1985: In Japan erscheint das Videospiel Super Mario Bros. der japanischen Firma Nintendo.
-#1991: Die erste Episode der US-Zeichentrickserie Die Simpsons wird in Deutschland ausgestrahlt.
-09-14: ~
+09-13:
+  - 'Die Super Mario Brother erschienen vor {1985} Jahren in Japan.'
+  - 'Die erste Episode der US-Zeichentrickserie "Die Simpsons" wurde vor {1991} Jahren in Deutschland gesendet.'
+09-14:
 #2007: Die SCO Group teilt ihre Insolvenz nach dem verlorenen Rechtsstreit über die Besitzansprüche am Quellcode von Linux mit.
 #1956: IBM stellt mit dem IBM 305 RAMAC den ersten Computer mit einem Festplattenlaufwerk vor.
 #1990: Offizieller Start des weltweiten Human Genome Projects.

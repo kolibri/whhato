@@ -21,8 +21,8 @@ class WhhatoControllerTest extends WebTestCase
         $client = static::createClient();
         $crawler = $client->request('GET', '/overview');
         static::assertTrue($client->getResponse()->isSuccessful());
-        static::assertSame(12, $crawler->filter('li.month')->count());
-        static::assertSame(365, $crawler->filter('li.day')->count());
+        static::assertSame(12, $crawler->filter('.month')->count());
+        static::assertSame(365, $crawler->filter('.day')->count());
     }
 
     public function testWhatHappenedTodayActionWithoutGivenDate(): void

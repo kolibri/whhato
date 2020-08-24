@@ -31,6 +31,8 @@ deploy:
 
 install:
 	cd project && composer install --no-interaction --prefer-dist --optimize-autoloader
+	cd project && yarn install --non-interactive
+	cd project && yarn build --non-interactive
 	cd project && ./bin/phpunit install
 
 test: clean
@@ -38,6 +40,8 @@ test: clean
 	cd project && ./bin/console lint:twig templates
 	cd project && ./bin/phpunit
 	cd project && ./vendor/bin/php-cs-fixer fix --dry-run
+
+test-fix: cs-fixer test
 
 test-coverage:
 	cd project && ./bin/phpunit --coverage-html=../coverage tests/Whhato
